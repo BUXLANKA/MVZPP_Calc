@@ -67,10 +67,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="History_001DataSet.Designer.cs">
+    <Compile Include="History_1eR1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>History_001DataSet.xsd</DependentUpon>
+      <DependentUpon>History_1eR1DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="modules\CalcModule.cs" />
     <Compile Include="modules\GetTime.cs" />
@@ -89,16 +89,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="History_001DataSet.xsc">
-      <DependentUpon>History_001DataSet.xsd</DependentUpon>
+    <None Include="History_1eR1DataSet.xsc">
+      <DependentUpon>History_1eR1DataSet.xsd</DependentUpon>
     </None>
-    <None Include="History_001DataSet.xsd">
+    <None Include="History_1eR1DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>History_001DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>History_1eR1DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="History_001DataSet.xss">
-      <DependentUpon>History_001DataSet.xsd</DependentUpon>
+    <None Include="History_1eR1DataSet.xss">
+      <DependentUpon>History_1eR1DataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -125,11 +125,13 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="databases\History_001.mdf" />
-    <Content Include="databases\History_001_log.ldf">
-      <DependentUpon>History_001.mdf</DependentUpon>
+    <Content Include="databases\History_1eR1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="databases\History_1eR1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>History_1eR1.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

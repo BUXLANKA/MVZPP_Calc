@@ -13,7 +13,7 @@ namespace MVZPP_Calc.modules
 {
     internal class LocalDBSaveData
     {
-        string connectionString = @"";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\databases\History_1eR1.mdf;Integrated Security=True";
 
         public void SaveData(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG)
         {
@@ -41,7 +41,7 @@ namespace MVZPP_Calc.modules
                     // Выполняем команду
                     command.ExecuteNonQuery();
 
-                    MessageBox.Show("Данные успешно добавлены в таблицу NKPR_GG_CALC_RES");
+                    //MessageBox.Show("Данные успешно добавлены в таблицу NKPR_GG_CALC_RES");
                 }
                 catch (Exception ex)
                 {

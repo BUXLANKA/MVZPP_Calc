@@ -27,6 +27,10 @@ namespace MVZPP_Calc
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "history_1eR1DataSet.KNPR_LVZH_CALC_RES". При необходимости она может быть перемещена или удалена.
+            this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.history_1eR1DataSet.KNPR_LVZH_CALC_RES);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "history_1eR1DataSet.KNPR_GG_CALC_RES". При необходимости она может быть перемещена или удалена.
+            this.kNPR_GG_CALC_RESTableAdapter.Fill(this.history_1eR1DataSet.KNPR_GG_CALC_RES);
 
             mGG_Text.Text = "";
             mLVZH_Text.Text = "";
@@ -53,12 +57,15 @@ namespace MVZPP_Calc
             R_result_for_GG.Text = Convert.ToString(Math.Round(calculator.CalculateRadiusGG(), 6));
             Z_result_for_GG.Text = Convert.ToString(Math.Round(calculator.CalculateZGG(), 6));
 
-            //History.SaveData(calculator.mGG, calculator.pGG, calculator.nkprGG, (calculator.CalculateRadiusGG()), (calculator.CalculateZGG()));
+            History.SaveData(calculator.mGG, calculator.pGG, calculator.nkprGG, (calculator.CalculateRadiusGG()), (calculator.CalculateZGG()));
         }
 
         private void ReloadTables_Click(object sender, EventArgs e)
         {
-
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "history_1eR1DataSet.KNPR_LVZH_CALC_RES". При необходимости она может быть перемещена или удалена.
+            this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.history_1eR1DataSet.KNPR_LVZH_CALC_RES);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "history_1eR1DataSet.KNPR_GG_CALC_RES". При необходимости она может быть перемещена или удалена.
+            this.kNPR_GG_CALC_RESTableAdapter.Fill(this.history_1eR1DataSet.KNPR_GG_CALC_RES);
         }
 
         private void CalculateForLVZH_Click(object sender, EventArgs e)
@@ -73,7 +80,7 @@ namespace MVZPP_Calc
 
         private void CreateResultFileForGG_Click(object sender, EventArgs e)
         {
-            string ResultString = $" ОТЧЕТ ИЗМЕРЕНИЙ ОТ {DateTime.Get()}: \n Измерение нижнего концентрационного предела распространения пламени горючих газов (НКПР ГГ)\n мг = {calculator.mGG}\n ρг = {calculator.pGG}\n Снкрп = {calculator.nkprGG}\n Rнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateRadiusGG(), 6))}\n Zнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateZGG(), 6))}";
+            string ResultString = $" ОТЧЕТ ИЗМЕРЕНИЙ ОТ {DateTime.Get()}: \n Измерение нижнего концентрационного предела распространения пламени горючих газов (НКПР ГГ)\n мг = {calculator.mGG} кг\n ρг = {calculator.pGG} кг/м3\n Снкрп = {calculator.nkprGG} %\n Rнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateRadiusGG(), 6))} м\n Zнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateZGG(), 6))} м";
             
             string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "calculator_results.txt");
             File.WriteAllText(filePath, ResultString);
@@ -83,12 +90,33 @@ namespace MVZPP_Calc
 
         private void CreateResultFileForLVZH_Click(object sender, EventArgs e)
         {
-            string ResultString = $" ОТЧЕТ ИЗМЕРЕНИЙ ОТ {DateTime.Get()}: \n Измерение нижнего концентрационного предела распространения ЛВЖ (НКПР ЛВЖ)\n мп = {calculator.mLVZH}\n ρп = {calculator.pLVZH}\n Снкрп = {calculator.nkprLVZH}\n Rнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateRadiusLVZH(), 6))}\n Zнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateZLVZH(), 6))}";
+            string ResultString = $" ОТЧЕТ ИЗМЕРЕНИЙ ОТ {DateTime.Get()}: \n Измерение нижнего концентрационного предела распространения ЛВЖ (НКПР ЛВЖ)\n мп = {calculator.mLVZH} кг\n ρп = {calculator.pLVZH} кг/м3\n Снкрп = {calculator.nkprLVZH} %\n Rнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateRadiusLVZH(), 6))} м\n Zнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateZLVZH(), 6))} м";
 
             string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "calculator_results.txt");
             File.WriteAllText(filePath, ResultString);
 
             Process.Start("notepad.exe", filePath);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Проверяем, была ли нажата кнопка закрытия окна программы
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                // Отображаем диалоговое окно с подтверждением выхода
+                DialogResult result = MessageBox.Show("Вы уверены, что хотите выйти из программы?\nИстория расчётов будет очищена!", "Подтверждение выхода", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                // Если пользователь подтвердил выход, закрываем приложение
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                // Если пользователь отменил выход, отменяем закрытие окна программы
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
         }
     }
 }

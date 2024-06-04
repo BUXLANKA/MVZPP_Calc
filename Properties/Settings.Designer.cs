@@ -70,11 +70,22 @@ namespace MVZPP_Calc.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\databases\\His" +
-            "tory_001.mdf;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\\\databases\\\\" +
+            "History_001.mdf;Integrated Security=True")]
         public string History_001ConnectionString {
             get {
                 return ((string)(this["History_001ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\databases\\His" +
+            "tory_1eR1.mdf;Integrated Security=True")]
+        public string History_1eR1ConnectionString {
+            get {
+                return ((string)(this["History_1eR1ConnectionString"]));
             }
         }
     }

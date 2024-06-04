@@ -86,6 +86,26 @@
             this.kNPR_GG_CALC_RESBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kNPR_LVZH_CALC_RESBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.kNPR_LVZH_CALC_RESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.history_1eR1DataSet = new MVZPP_Calc.History_1eR1DataSet();
+            this.kNPR_GG_CALC_RESBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.kNPR_GG_CALC_RESTableAdapter = new MVZPP_Calc.History_1eR1DataSetTableAdapters.KNPR_GG_CALC_RESTableAdapter();
+            this.tableAdapterManager = new MVZPP_Calc.History_1eR1DataSetTableAdapters.TableAdapterManager();
+            this.kNPR_GG_CALC_RESDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kNPR_LVZH_CALC_RESBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.kNPR_LVZH_CALC_RESTableAdapter = new MVZPP_Calc.History_1eR1DataSetTableAdapters.KNPR_LVZH_CALC_RESTableAdapter();
+            this.kNPR_LVZH_CALC_RESDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -95,9 +115,16 @@
             this.groupBox4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.history_1eR1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -637,6 +664,8 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.AutoScroll = true;
+            this.tabPage4.Controls.Add(this.kNPR_GG_CALC_RESDataGridView);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -647,6 +676,8 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.AutoScroll = true;
+            this.tabPage5.Controls.Add(this.kNPR_LVZH_CALC_RESDataGridView);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -654,6 +685,144 @@
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Расчёты НКПРЛВЖ";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // history_1eR1DataSet
+            // 
+            this.history_1eR1DataSet.DataSetName = "History_1eR1DataSet";
+            this.history_1eR1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kNPR_GG_CALC_RESBindingSource1
+            // 
+            this.kNPR_GG_CALC_RESBindingSource1.DataMember = "KNPR_GG_CALC_RES";
+            this.kNPR_GG_CALC_RESBindingSource1.DataSource = this.history_1eR1DataSet;
+            // 
+            // kNPR_GG_CALC_RESTableAdapter
+            // 
+            this.kNPR_GG_CALC_RESTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.KNPR_GG_CALC_RESTableAdapter = this.kNPR_GG_CALC_RESTableAdapter;
+            this.tableAdapterManager.KNPR_LVZH_CALC_RESTableAdapter = this.kNPR_LVZH_CALC_RESTableAdapter;
+            this.tableAdapterManager.UpdateOrder = MVZPP_Calc.History_1eR1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // kNPR_GG_CALC_RESDataGridView
+            // 
+            this.kNPR_GG_CALC_RESDataGridView.AutoGenerateColumns = false;
+            this.kNPR_GG_CALC_RESDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.kNPR_GG_CALC_RESDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24,
+            this.dataGridViewTextBoxColumn25,
+            this.dataGridViewTextBoxColumn26,
+            this.dataGridViewTextBoxColumn27,
+            this.dataGridViewTextBoxColumn28});
+            this.kNPR_GG_CALC_RESDataGridView.DataSource = this.kNPR_GG_CALC_RESBindingSource1;
+            this.kNPR_GG_CALC_RESDataGridView.Location = new System.Drawing.Point(6, 6);
+            this.kNPR_GG_CALC_RESDataGridView.Name = "kNPR_GG_CALC_RESDataGridView";
+            this.kNPR_GG_CALC_RESDataGridView.Size = new System.Drawing.Size(758, 338);
+            this.kNPR_GG_CALC_RESDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "N";
+            this.dataGridViewTextBoxColumn23.HeaderText = "N";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "mGG";
+            this.dataGridViewTextBoxColumn24.HeaderText = "mGG";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "pGG";
+            this.dataGridViewTextBoxColumn25.HeaderText = "pGG";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "CnkprGG";
+            this.dataGridViewTextBoxColumn26.HeaderText = "CnkprGG";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "R_result_for_GG";
+            this.dataGridViewTextBoxColumn27.HeaderText = "R_result_for_GG";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "Z_result_for_GG";
+            this.dataGridViewTextBoxColumn28.HeaderText = "Z_result_for_GG";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            // 
+            // kNPR_LVZH_CALC_RESBindingSource2
+            // 
+            this.kNPR_LVZH_CALC_RESBindingSource2.DataMember = "KNPR_LVZH_CALC_RES";
+            this.kNPR_LVZH_CALC_RESBindingSource2.DataSource = this.history_1eR1DataSet;
+            // 
+            // kNPR_LVZH_CALC_RESTableAdapter
+            // 
+            this.kNPR_LVZH_CALC_RESTableAdapter.ClearBeforeFill = true;
+            // 
+            // kNPR_LVZH_CALC_RESDataGridView
+            // 
+            this.kNPR_LVZH_CALC_RESDataGridView.AutoGenerateColumns = false;
+            this.kNPR_LVZH_CALC_RESDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.kNPR_LVZH_CALC_RESDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn29,
+            this.dataGridViewTextBoxColumn30,
+            this.dataGridViewTextBoxColumn31,
+            this.dataGridViewTextBoxColumn32,
+            this.dataGridViewTextBoxColumn33,
+            this.dataGridViewTextBoxColumn34});
+            this.kNPR_LVZH_CALC_RESDataGridView.DataSource = this.kNPR_LVZH_CALC_RESBindingSource2;
+            this.kNPR_LVZH_CALC_RESDataGridView.Location = new System.Drawing.Point(6, 6);
+            this.kNPR_LVZH_CALC_RESDataGridView.Name = "kNPR_LVZH_CALC_RESDataGridView";
+            this.kNPR_LVZH_CALC_RESDataGridView.Size = new System.Drawing.Size(758, 338);
+            this.kNPR_LVZH_CALC_RESDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "N";
+            this.dataGridViewTextBoxColumn29.HeaderText = "N";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "mPP";
+            this.dataGridViewTextBoxColumn30.HeaderText = "mPP";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "pPP";
+            this.dataGridViewTextBoxColumn31.HeaderText = "pPP";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "CnkprPP";
+            this.dataGridViewTextBoxColumn32.HeaderText = "CnkprPP";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "R_result_for_PP";
+            this.dataGridViewTextBoxColumn33.HeaderText = "R_result_for_PP";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "Z_result_for_PP";
+            this.dataGridViewTextBoxColumn34.HeaderText = "Z_result_for_PP";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
             // 
             // Form1
             // 
@@ -663,6 +832,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Калькулятор МВЗПП";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -680,9 +850,16 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabControl2.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.history_1eR1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -767,6 +944,26 @@
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
+        private History_1eR1DataSet history_1eR1DataSet;
+        private System.Windows.Forms.BindingSource kNPR_GG_CALC_RESBindingSource1;
+        private History_1eR1DataSetTableAdapters.KNPR_GG_CALC_RESTableAdapter kNPR_GG_CALC_RESTableAdapter;
+        private History_1eR1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView kNPR_GG_CALC_RESDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
+        private History_1eR1DataSetTableAdapters.KNPR_LVZH_CALC_RESTableAdapter kNPR_LVZH_CALC_RESTableAdapter;
+        private System.Windows.Forms.BindingSource kNPR_LVZH_CALC_RESBindingSource2;
+        private System.Windows.Forms.DataGridView kNPR_LVZH_CALC_RESDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
     }
 }
 
