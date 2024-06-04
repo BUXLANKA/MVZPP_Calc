@@ -61,7 +61,7 @@ namespace MVZPP_Calc
                 R_result_for_GG.Text = Convert.ToString(Math.Round(calculator.CalculateRadiusGG(), 6));
                 Z_result_for_GG.Text = Convert.ToString(Math.Round(calculator.CalculateZGG(), 6));
 
-                History.SaveData(calculator.mGG, calculator.pGG, calculator.nkprGG, (calculator.CalculateRadiusGG()), (calculator.CalculateZGG()));
+                History.SaveDataGG(calculator.mGG, calculator.pGG, calculator.nkprGG, (calculator.CalculateRadiusGG()), (calculator.CalculateZGG()));
             }
         }
 
@@ -85,6 +85,8 @@ namespace MVZPP_Calc
 
                 R_result_for_LVZH.Text = Convert.ToString(Math.Round(calculator.CalculateRadiusLVZH(), 6));
                 Z_result_for_LVZH.Text = Convert.ToString(Math.Round(calculator.CalculateZLVZH(), 6));
+
+                History.SaveDataLVZH(calculator.mLVZH, calculator.pLVZH, calculator.nkprLVZH, calculator.CalculateRadiusLVZH(), calculator.CalculateZLVZH());
             }
         }
 
