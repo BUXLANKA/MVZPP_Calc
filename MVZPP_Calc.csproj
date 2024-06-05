@@ -73,6 +73,7 @@
       <DependentUpon>History_1eR1DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="modules\CalcModule.cs" />
+    <Compile Include="modules\CloseWindowDisclaimer.cs" />
     <Compile Include="modules\GetTime.cs" />
     <Compile Include="modules\LocalDBSaveData.cs" />
     <Compile Include="Program.cs" />
@@ -126,11 +127,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="databases\History_1eR1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="databases\History_1eR1.mdf" />
     <Content Include="databases\History_1eR1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>History_1eR1.mdf</DependentUpon>
     </Content>
   </ItemGroup>

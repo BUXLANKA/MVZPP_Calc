@@ -117,14 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label28.Text" xml:space="preserve">
-    <value>mг — масса горючего газа, поступившего в открытое пространство при пожароопасной ситуации (кг)
-
-ρг — плотность ГГ при расчетной температуре и атмосферном давлении (кг/м3)
-
-Снкрп — нижний концентрационный предел распространения пламени (%)
-</value>
-  </data>
   <metadata name="kNPR_GG_CALC_RESBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>435, 128</value>
   </metadata>

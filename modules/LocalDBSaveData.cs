@@ -13,7 +13,7 @@ namespace MVZPP_Calc.modules
 {
     internal class LocalDBSaveData
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\databases\History_1eR1.mdf;Integrated Security=True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\buxwm\source\repos\MVZPP_Calc\databases\History_1eR1.mdf;Integrated Security=True";
 
         public void SaveDataGG(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG)
         {

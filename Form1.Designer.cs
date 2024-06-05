@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label28 = new System.Windows.Forms.Label();
@@ -58,6 +57,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label29 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.ClearAllLVZHButton = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.Z_result_for_LVZH = new System.Windows.Forms.Label();
@@ -107,7 +107,6 @@
             this.kNPR_GG_CALC_RESTableAdapter = new MVZPP_Calc.History_1eR1DataSetTableAdapters.KNPR_GG_CALC_RESTableAdapter();
             this.tableAdapterManager = new MVZPP_Calc.History_1eR1DataSetTableAdapters.TableAdapterManager();
             this.kNPR_LVZH_CALC_RESTableAdapter = new MVZPP_Calc.History_1eR1DataSetTableAdapters.KNPR_LVZH_CALC_RESTableAdapter();
-            this.ClearAllLVZHButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -160,9 +159,11 @@
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(8, 240);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(523, 65);
+            this.label28.Size = new System.Drawing.Size(414, 65);
             this.label28.TabIndex = 17;
-            this.label28.Text = resources.GetString("label28.Text");
+            this.label28.Text = "mг — масса горючего газа (кг)\r\n\r\nρг — плотность ГГ при расчетной температуре и ат" +
+    "мосферном давлении (кг/м3)\r\n\r\nСнкрп — нижний концентрационный предел распростран" +
+    "ения пламени (%)\r\n";
             // 
             // groupBox2
             // 
@@ -197,7 +198,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(426, 37);
             this.button3.TabIndex = 16;
-            this.button3.Text = "Занести данные в журнал";
+            this.button3.Text = "Занести данные в журнал глобальных измерений";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // label11
@@ -433,13 +434,23 @@
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             // 
+            // ClearAllLVZHButton
+            // 
+            this.ClearAllLVZHButton.Location = new System.Drawing.Point(299, 16);
+            this.ClearAllLVZHButton.Name = "ClearAllLVZHButton";
+            this.ClearAllLVZHButton.Size = new System.Drawing.Size(124, 23);
+            this.ClearAllLVZHButton.TabIndex = 19;
+            this.ClearAllLVZHButton.Text = "Очистить все поля";
+            this.ClearAllLVZHButton.UseVisualStyleBackColor = true;
+            this.ClearAllLVZHButton.Click += new System.EventHandler(this.ClearAllLVZHButton_Click);
+            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(6, 84);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(426, 37);
             this.button4.TabIndex = 16;
-            this.button4.Text = "Занести данные в журнал";
+            this.button4.Text = "Занести данные в журнал глобальных измерений\r\n";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // label14
@@ -690,6 +701,8 @@
             // 
             // kNPR_GG_CALC_RESDataGridView
             // 
+            this.kNPR_GG_CALC_RESDataGridView.AllowUserToAddRows = false;
+            this.kNPR_GG_CALC_RESDataGridView.AllowUserToDeleteRows = false;
             this.kNPR_GG_CALC_RESDataGridView.AutoGenerateColumns = false;
             this.kNPR_GG_CALC_RESDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.kNPR_GG_CALC_RESDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -702,6 +715,7 @@
             this.kNPR_GG_CALC_RESDataGridView.DataSource = this.kNPR_GG_CALC_RESBindingSource1;
             this.kNPR_GG_CALC_RESDataGridView.Location = new System.Drawing.Point(6, 6);
             this.kNPR_GG_CALC_RESDataGridView.Name = "kNPR_GG_CALC_RESDataGridView";
+            this.kNPR_GG_CALC_RESDataGridView.ReadOnly = true;
             this.kNPR_GG_CALC_RESDataGridView.Size = new System.Drawing.Size(758, 338);
             this.kNPR_GG_CALC_RESDataGridView.TabIndex = 0;
             // 
@@ -717,30 +731,35 @@
             this.dataGridViewTextBoxColumn24.DataPropertyName = "mGG";
             this.dataGridViewTextBoxColumn24.HeaderText = "mGG";
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn25
             // 
             this.dataGridViewTextBoxColumn25.DataPropertyName = "pGG";
             this.dataGridViewTextBoxColumn25.HeaderText = "pGG";
             this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn26
             // 
             this.dataGridViewTextBoxColumn26.DataPropertyName = "CnkprGG";
             this.dataGridViewTextBoxColumn26.HeaderText = "CnkprGG";
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn27
             // 
             this.dataGridViewTextBoxColumn27.DataPropertyName = "R_result_for_GG";
             this.dataGridViewTextBoxColumn27.HeaderText = "R_result_for_GG";
             this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn28
             // 
             this.dataGridViewTextBoxColumn28.DataPropertyName = "Z_result_for_GG";
             this.dataGridViewTextBoxColumn28.HeaderText = "Z_result_for_GG";
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.ReadOnly = true;
             // 
             // kNPR_GG_CALC_RESBindingSource1
             // 
@@ -766,6 +785,8 @@
             // 
             // kNPR_LVZH_CALC_RESDataGridView
             // 
+            this.kNPR_LVZH_CALC_RESDataGridView.AllowUserToAddRows = false;
+            this.kNPR_LVZH_CALC_RESDataGridView.AllowUserToDeleteRows = false;
             this.kNPR_LVZH_CALC_RESDataGridView.AutoGenerateColumns = false;
             this.kNPR_LVZH_CALC_RESDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.kNPR_LVZH_CALC_RESDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -778,6 +799,7 @@
             this.kNPR_LVZH_CALC_RESDataGridView.DataSource = this.kNPR_LVZH_CALC_RESBindingSource2;
             this.kNPR_LVZH_CALC_RESDataGridView.Location = new System.Drawing.Point(6, 6);
             this.kNPR_LVZH_CALC_RESDataGridView.Name = "kNPR_LVZH_CALC_RESDataGridView";
+            this.kNPR_LVZH_CALC_RESDataGridView.ReadOnly = true;
             this.kNPR_LVZH_CALC_RESDataGridView.Size = new System.Drawing.Size(758, 338);
             this.kNPR_LVZH_CALC_RESDataGridView.TabIndex = 0;
             // 
@@ -793,30 +815,35 @@
             this.dataGridViewTextBoxColumn30.DataPropertyName = "mPP";
             this.dataGridViewTextBoxColumn30.HeaderText = "mPP";
             this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn31
             // 
             this.dataGridViewTextBoxColumn31.DataPropertyName = "pPP";
             this.dataGridViewTextBoxColumn31.HeaderText = "pPP";
             this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn32
             // 
             this.dataGridViewTextBoxColumn32.DataPropertyName = "CnkprPP";
             this.dataGridViewTextBoxColumn32.HeaderText = "CnkprPP";
             this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn33
             // 
             this.dataGridViewTextBoxColumn33.DataPropertyName = "R_result_for_PP";
             this.dataGridViewTextBoxColumn33.HeaderText = "R_result_for_PP";
             this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn34
             // 
             this.dataGridViewTextBoxColumn34.DataPropertyName = "Z_result_for_PP";
             this.dataGridViewTextBoxColumn34.HeaderText = "Z_result_for_PP";
             this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.ReadOnly = true;
             // 
             // kNPR_LVZH_CALC_RESBindingSource2
             // 
@@ -837,16 +864,6 @@
             // kNPR_LVZH_CALC_RESTableAdapter
             // 
             this.kNPR_LVZH_CALC_RESTableAdapter.ClearBeforeFill = true;
-            // 
-            // ClearAllLVZHButton
-            // 
-            this.ClearAllLVZHButton.Location = new System.Drawing.Point(299, 16);
-            this.ClearAllLVZHButton.Name = "ClearAllLVZHButton";
-            this.ClearAllLVZHButton.Size = new System.Drawing.Size(124, 23);
-            this.ClearAllLVZHButton.TabIndex = 19;
-            this.ClearAllLVZHButton.Text = "Очистить все поля";
-            this.ClearAllLVZHButton.UseVisualStyleBackColor = true;
-            this.ClearAllLVZHButton.Click += new System.EventHandler(this.ClearAllLVZHButton_Click);
             // 
             // Form1
             // 

@@ -16,7 +16,8 @@ namespace MVZPP_Calc
 {
     public partial class Form1 : Form
     {
-
+        
+        CloseWindowDisclaimer CloseWindow = new CloseWindowDisclaimer();
         GetTime DateTime = new GetTime();
         CalcModule calculator = new CalcModule();
         LocalDBSaveData History = new LocalDBSaveData();
@@ -126,23 +127,7 @@ namespace MVZPP_Calc
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Проверяем, была ли нажата кнопка закрытия окна программы
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                // Отображаем диалоговое окно с подтверждением выхода
-                DialogResult result = MessageBox.Show("Вы уверены, что хотите выйти из программы?\nИстория расчётов будет очищена!", "Подтверждение выхода", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                // Если пользователь подтвердил выход, закрываем приложение
-                if (result == DialogResult.Yes)
-                {
-                    Application.Exit();
-                }
-                // Если пользователь отменил выход, отменяем закрытие окна программы
-                else
-                {
-                    e.Cancel = true;
-                }
-            }
+            CloseWindow.ShowDisclaimer(e);
         }
 
         private void ClearAllGGButton_Click(object sender, EventArgs e)
