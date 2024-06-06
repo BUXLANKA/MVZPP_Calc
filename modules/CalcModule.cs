@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,6 +27,10 @@ namespace MVZPP_Calc.modules
         {
             return 0.26 * Math.Pow((mGG / (pGG * nkprGG)), 0.33);
         }
+        public double CalculateRfGG()
+        {
+            return 1.2 * CalculateRadiusGG();
+        }
 
 
         // FOR LVZH
@@ -36,6 +41,10 @@ namespace MVZPP_Calc.modules
         public double CalculateZLVZH()
         {
             return 0.26 * Math.Pow((mLVZH / (pLVZH * nkprLVZH)), 0.33);
+        }
+        public double CalculateRfLVZH()
+        {
+            return 1.2 * CalculateRadiusLVZH();
         }
     }
 }

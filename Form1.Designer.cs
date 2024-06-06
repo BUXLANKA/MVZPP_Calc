@@ -83,6 +83,24 @@
             this.label27 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.kNPR_GG_CALC_RESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kNPR_LVZH_CALC_RESBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.kNPR_LVZH_CALC_RESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label8 = new System.Windows.Forms.Label();
+            this.Rf_result_for_GG = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.ClearOnlyVariableForGGButton = new System.Windows.Forms.Button();
+            this.ClearOnlyVariableForLVZHButton = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Rf_result_for_LVZH = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.kNPR_GG_CALC_RESBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.history_1eR1DataSet = new MVZPP_Calc.History_1eR1DataSet();
+            this.kNPR_LVZH_CALC_RESBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.kNPR_GG_CALC_RESTableAdapter = new MVZPP_Calc.History_1eR1DataSetTableAdapters.KNPR_GG_CALC_RESTableAdapter();
+            this.tableAdapterManager = new MVZPP_Calc.History_1eR1DataSetTableAdapters.TableAdapterManager();
+            this.kNPR_LVZH_CALC_RESTableAdapter = new MVZPP_Calc.History_1eR1DataSetTableAdapters.KNPR_LVZH_CALC_RESTableAdapter();
             this.kNPR_GG_CALC_RESDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,9 +108,7 @@
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kNPR_GG_CALC_RESBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.history_1eR1DataSet = new MVZPP_Calc.History_1eR1DataSet();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kNPR_LVZH_CALC_RESDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -100,13 +116,7 @@
             this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kNPR_LVZH_CALC_RESBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.kNPR_GG_CALC_RESBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kNPR_LVZH_CALC_RESBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.kNPR_LVZH_CALC_RESBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kNPR_GG_CALC_RESTableAdapter = new MVZPP_Calc.History_1eR1DataSetTableAdapters.KNPR_GG_CALC_RESTableAdapter();
-            this.tableAdapterManager = new MVZPP_Calc.History_1eR1DataSetTableAdapters.TableAdapterManager();
-            this.kNPR_LVZH_CALC_RESTableAdapter = new MVZPP_Calc.History_1eR1DataSetTableAdapters.KNPR_LVZH_CALC_RESTableAdapter();
+            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -117,15 +127,15 @@
             this.tabPage3.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.history_1eR1DataSet)).BeginInit();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.history_1eR1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -157,7 +167,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(8, 240);
+            this.label28.Location = new System.Drawing.Point(8, 260);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(414, 65);
             this.label28.TabIndex = 17;
@@ -167,6 +177,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.Rf_result_for_GG);
+            this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.ClearAllGGButton);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.label11);
@@ -178,13 +191,13 @@
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Location = new System.Drawing.Point(308, 49);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(438, 178);
+            this.groupBox2.Size = new System.Drawing.Size(438, 199);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             // 
             // ClearAllGGButton
             // 
-            this.ClearAllGGButton.Location = new System.Drawing.Point(299, 16);
+            this.ClearAllGGButton.Location = new System.Drawing.Point(308, 16);
             this.ClearAllGGButton.Name = "ClearAllGGButton";
             this.ClearAllGGButton.Size = new System.Drawing.Size(124, 23);
             this.ClearAllGGButton.TabIndex = 17;
@@ -194,7 +207,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(6, 84);
+            this.button3.Location = new System.Drawing.Point(6, 106);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(426, 37);
             this.button3.TabIndex = 16;
@@ -205,7 +218,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(169, 46);
+            this.label11.Location = new System.Drawing.Point(169, 72);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(19, 19);
             this.label11.TabIndex = 15;
@@ -215,7 +228,7 @@
             // 
             this.Z_result_for_GG.AutoSize = true;
             this.Z_result_for_GG.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Z_result_for_GG.Location = new System.Drawing.Point(96, 46);
+            this.Z_result_for_GG.Location = new System.Drawing.Point(96, 72);
             this.Z_result_for_GG.Name = "Z_result_for_GG";
             this.Z_result_for_GG.Size = new System.Drawing.Size(67, 19);
             this.Z_result_for_GG.TabIndex = 14;
@@ -243,7 +256,7 @@
             // 
             // CreateResultFileForGG
             // 
-            this.CreateResultFileForGG.Location = new System.Drawing.Point(6, 127);
+            this.CreateResultFileForGG.Location = new System.Drawing.Point(6, 149);
             this.CreateResultFileForGG.Name = "CreateResultFileForGG";
             this.CreateResultFileForGG.Size = new System.Drawing.Size(426, 37);
             this.CreateResultFileForGG.TabIndex = 11;
@@ -255,7 +268,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(16, 46);
+            this.label9.Location = new System.Drawing.Point(16, 70);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 19);
             this.label9.TabIndex = 8;
@@ -273,6 +286,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.ClearOnlyVariableForGGButton);
             this.groupBox1.Controls.Add(this.CalculateForGG);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.pGG_Text);
@@ -285,13 +299,13 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(8, 49);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(279, 178);
+            this.groupBox1.Size = new System.Drawing.Size(279, 199);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // CalculateForGG
             // 
-            this.CalculateForGG.Location = new System.Drawing.Point(6, 127);
+            this.CalculateForGG.Location = new System.Drawing.Point(6, 106);
             this.CalculateForGG.Name = "CalculateForGG";
             this.CalculateForGG.Size = new System.Drawing.Size(267, 37);
             this.CalculateForGG.TabIndex = 11;
@@ -409,7 +423,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(8, 240);
+            this.label29.Location = new System.Drawing.Point(8, 260);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(524, 65);
             this.label29.TabIndex = 18;
@@ -419,8 +433,11 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.ClearAllLVZHButton);
+            this.groupBox3.Controls.Add(this.Rf_result_for_LVZH);
             this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.label30);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.Z_result_for_LVZH);
             this.groupBox3.Controls.Add(this.label16);
@@ -430,13 +447,13 @@
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Location = new System.Drawing.Point(308, 49);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(438, 178);
+            this.groupBox3.Size = new System.Drawing.Size(438, 199);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             // 
             // ClearAllLVZHButton
             // 
-            this.ClearAllLVZHButton.Location = new System.Drawing.Point(299, 16);
+            this.ClearAllLVZHButton.Location = new System.Drawing.Point(308, 16);
             this.ClearAllLVZHButton.Name = "ClearAllLVZHButton";
             this.ClearAllLVZHButton.Size = new System.Drawing.Size(124, 23);
             this.ClearAllLVZHButton.TabIndex = 19;
@@ -446,7 +463,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(6, 84);
+            this.button4.Location = new System.Drawing.Point(6, 106);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(426, 37);
             this.button4.TabIndex = 16;
@@ -457,7 +474,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(169, 46);
+            this.label14.Location = new System.Drawing.Point(169, 72);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(19, 19);
             this.label14.TabIndex = 15;
@@ -467,7 +484,7 @@
             // 
             this.Z_result_for_LVZH.AutoSize = true;
             this.Z_result_for_LVZH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Z_result_for_LVZH.Location = new System.Drawing.Point(96, 46);
+            this.Z_result_for_LVZH.Location = new System.Drawing.Point(96, 72);
             this.Z_result_for_LVZH.Name = "Z_result_for_LVZH";
             this.Z_result_for_LVZH.Size = new System.Drawing.Size(67, 19);
             this.Z_result_for_LVZH.TabIndex = 14;
@@ -495,7 +512,7 @@
             // 
             // CreateResultFileForLVZH
             // 
-            this.CreateResultFileForLVZH.Location = new System.Drawing.Point(6, 127);
+            this.CreateResultFileForLVZH.Location = new System.Drawing.Point(6, 149);
             this.CreateResultFileForLVZH.Name = "CreateResultFileForLVZH";
             this.CreateResultFileForLVZH.Size = new System.Drawing.Size(426, 37);
             this.CreateResultFileForLVZH.TabIndex = 11;
@@ -507,7 +524,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.Location = new System.Drawing.Point(16, 46);
+            this.label18.Location = new System.Drawing.Point(16, 70);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(64, 19);
             this.label18.TabIndex = 8;
@@ -525,6 +542,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.ClearOnlyVariableForLVZHButton);
             this.groupBox4.Controls.Add(this.CalculateForLVZH);
             this.groupBox4.Controls.Add(this.label20);
             this.groupBox4.Controls.Add(this.pLVZH_Text);
@@ -537,13 +555,13 @@
             this.groupBox4.Controls.Add(this.label25);
             this.groupBox4.Location = new System.Drawing.Point(8, 49);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(279, 178);
+            this.groupBox4.Size = new System.Drawing.Size(279, 199);
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             // 
             // CalculateForLVZH
             // 
-            this.CalculateForLVZH.Location = new System.Drawing.Point(6, 127);
+            this.CalculateForLVZH.Location = new System.Drawing.Point(6, 106);
             this.CalculateForLVZH.Name = "CalculateForLVZH";
             this.CalculateForLVZH.Size = new System.Drawing.Size(267, 37);
             this.CalculateForLVZH.TabIndex = 11;
@@ -699,78 +717,6 @@
             this.tabPage4.Text = "Расчёты НКПРГГ";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // kNPR_GG_CALC_RESDataGridView
-            // 
-            this.kNPR_GG_CALC_RESDataGridView.AllowUserToAddRows = false;
-            this.kNPR_GG_CALC_RESDataGridView.AllowUserToDeleteRows = false;
-            this.kNPR_GG_CALC_RESDataGridView.AutoGenerateColumns = false;
-            this.kNPR_GG_CALC_RESDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kNPR_GG_CALC_RESDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28});
-            this.kNPR_GG_CALC_RESDataGridView.DataSource = this.kNPR_GG_CALC_RESBindingSource1;
-            this.kNPR_GG_CALC_RESDataGridView.Location = new System.Drawing.Point(6, 6);
-            this.kNPR_GG_CALC_RESDataGridView.Name = "kNPR_GG_CALC_RESDataGridView";
-            this.kNPR_GG_CALC_RESDataGridView.ReadOnly = true;
-            this.kNPR_GG_CALC_RESDataGridView.Size = new System.Drawing.Size(758, 338);
-            this.kNPR_GG_CALC_RESDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "N";
-            this.dataGridViewTextBoxColumn23.HeaderText = "N";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "mGG";
-            this.dataGridViewTextBoxColumn24.HeaderText = "mGG";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "pGG";
-            this.dataGridViewTextBoxColumn25.HeaderText = "pGG";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "CnkprGG";
-            this.dataGridViewTextBoxColumn26.HeaderText = "CnkprGG";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "R_result_for_GG";
-            this.dataGridViewTextBoxColumn27.HeaderText = "R_result_for_GG";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "Z_result_for_GG";
-            this.dataGridViewTextBoxColumn28.HeaderText = "Z_result_for_GG";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            // 
-            // kNPR_GG_CALC_RESBindingSource1
-            // 
-            this.kNPR_GG_CALC_RESBindingSource1.DataMember = "KNPR_GG_CALC_RES";
-            this.kNPR_GG_CALC_RESBindingSource1.DataSource = this.history_1eR1DataSet;
-            // 
-            // history_1eR1DataSet
-            // 
-            this.history_1eR1DataSet.DataSetName = "History_1eR1DataSet";
-            this.history_1eR1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tabPage5
             // 
             this.tabPage5.AutoScroll = true;
@@ -783,67 +729,94 @@
             this.tabPage5.Text = "Расчёты НКПРЛВЖ";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // kNPR_LVZH_CALC_RESDataGridView
+            // label8
             // 
-            this.kNPR_LVZH_CALC_RESDataGridView.AllowUserToAddRows = false;
-            this.kNPR_LVZH_CALC_RESDataGridView.AllowUserToDeleteRows = false;
-            this.kNPR_LVZH_CALC_RESDataGridView.AutoGenerateColumns = false;
-            this.kNPR_LVZH_CALC_RESDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kNPR_LVZH_CALC_RESDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewTextBoxColumn30,
-            this.dataGridViewTextBoxColumn31,
-            this.dataGridViewTextBoxColumn32,
-            this.dataGridViewTextBoxColumn33,
-            this.dataGridViewTextBoxColumn34});
-            this.kNPR_LVZH_CALC_RESDataGridView.DataSource = this.kNPR_LVZH_CALC_RESBindingSource2;
-            this.kNPR_LVZH_CALC_RESDataGridView.Location = new System.Drawing.Point(6, 6);
-            this.kNPR_LVZH_CALC_RESDataGridView.Name = "kNPR_LVZH_CALC_RESDataGridView";
-            this.kNPR_LVZH_CALC_RESDataGridView.ReadOnly = true;
-            this.kNPR_LVZH_CALC_RESDataGridView.Size = new System.Drawing.Size(758, 338);
-            this.kNPR_LVZH_CALC_RESDataGridView.TabIndex = 0;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(169, 46);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(19, 19);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "м";
             // 
-            // dataGridViewTextBoxColumn29
+            // Rf_result_for_GG
             // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "N";
-            this.dataGridViewTextBoxColumn29.HeaderText = "N";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            this.Rf_result_for_GG.AutoSize = true;
+            this.Rf_result_for_GG.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Rf_result_for_GG.Location = new System.Drawing.Point(96, 46);
+            this.Rf_result_for_GG.Name = "Rf_result_for_GG";
+            this.Rf_result_for_GG.Size = new System.Drawing.Size(67, 19);
+            this.Rf_result_for_GG.TabIndex = 19;
+            this.Rf_result_for_GG.Text = "%result%";
             // 
-            // dataGridViewTextBoxColumn30
+            // label15
             // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "mPP";
-            this.dataGridViewTextBoxColumn30.HeaderText = "mPP";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(44, 46);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(36, 19);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Rf =";
             // 
-            // dataGridViewTextBoxColumn31
+            // ClearOnlyVariableForGGButton
             // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "pPP";
-            this.dataGridViewTextBoxColumn31.HeaderText = "pPP";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.ReadOnly = true;
+            this.ClearOnlyVariableForGGButton.Location = new System.Drawing.Point(6, 149);
+            this.ClearOnlyVariableForGGButton.Name = "ClearOnlyVariableForGGButton";
+            this.ClearOnlyVariableForGGButton.Size = new System.Drawing.Size(267, 37);
+            this.ClearOnlyVariableForGGButton.TabIndex = 12;
+            this.ClearOnlyVariableForGGButton.Text = "Очистить";
+            this.ClearOnlyVariableForGGButton.UseVisualStyleBackColor = true;
+            this.ClearOnlyVariableForGGButton.Click += new System.EventHandler(this.ClearOnlyVariableForGGButton_Click);
             // 
-            // dataGridViewTextBoxColumn32
+            // ClearOnlyVariableForLVZHButton
             // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "CnkprPP";
-            this.dataGridViewTextBoxColumn32.HeaderText = "CnkprPP";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.ReadOnly = true;
+            this.ClearOnlyVariableForLVZHButton.Location = new System.Drawing.Point(6, 149);
+            this.ClearOnlyVariableForLVZHButton.Name = "ClearOnlyVariableForLVZHButton";
+            this.ClearOnlyVariableForLVZHButton.Size = new System.Drawing.Size(267, 37);
+            this.ClearOnlyVariableForLVZHButton.TabIndex = 12;
+            this.ClearOnlyVariableForLVZHButton.Text = "Очистить";
+            this.ClearOnlyVariableForLVZHButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewTextBoxColumn33
+            // label12
             // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "R_result_for_PP";
-            this.dataGridViewTextBoxColumn33.HeaderText = "R_result_for_PP";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(169, 46);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(19, 19);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "м";
             // 
-            // dataGridViewTextBoxColumn34
+            // Rf_result_for_LVZH
             // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "Z_result_for_PP";
-            this.dataGridViewTextBoxColumn34.HeaderText = "Z_result_for_PP";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
+            this.Rf_result_for_LVZH.AutoSize = true;
+            this.Rf_result_for_LVZH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Rf_result_for_LVZH.Location = new System.Drawing.Point(96, 46);
+            this.Rf_result_for_LVZH.Name = "Rf_result_for_LVZH";
+            this.Rf_result_for_LVZH.Size = new System.Drawing.Size(67, 19);
+            this.Rf_result_for_LVZH.TabIndex = 22;
+            this.Rf_result_for_LVZH.Text = "%result%";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label30.Location = new System.Drawing.Point(44, 46);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(36, 19);
+            this.label30.TabIndex = 21;
+            this.label30.Text = "Rf =";
+            // 
+            // kNPR_GG_CALC_RESBindingSource1
+            // 
+            this.kNPR_GG_CALC_RESBindingSource1.DataMember = "KNPR_GG_CALC_RES";
+            this.kNPR_GG_CALC_RESBindingSource1.DataSource = this.history_1eR1DataSet;
+            // 
+            // history_1eR1DataSet
+            // 
+            this.history_1eR1DataSet.DataSetName = "History_1eR1DataSet";
+            this.history_1eR1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // kNPR_LVZH_CALC_RESBindingSource2
             // 
@@ -864,6 +837,128 @@
             // kNPR_LVZH_CALC_RESTableAdapter
             // 
             this.kNPR_LVZH_CALC_RESTableAdapter.ClearBeforeFill = true;
+            // 
+            // kNPR_GG_CALC_RESDataGridView
+            // 
+            this.kNPR_GG_CALC_RESDataGridView.AutoGenerateColumns = false;
+            this.kNPR_GG_CALC_RESDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.kNPR_GG_CALC_RESDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24,
+            this.dataGridViewTextBoxColumn25,
+            this.dataGridViewTextBoxColumn26,
+            this.dataGridViewTextBoxColumn27,
+            this.dataGridViewTextBoxColumn28,
+            this.dataGridViewTextBoxColumn35});
+            this.kNPR_GG_CALC_RESDataGridView.DataSource = this.kNPR_GG_CALC_RESBindingSource1;
+            this.kNPR_GG_CALC_RESDataGridView.Location = new System.Drawing.Point(6, 6);
+            this.kNPR_GG_CALC_RESDataGridView.Name = "kNPR_GG_CALC_RESDataGridView";
+            this.kNPR_GG_CALC_RESDataGridView.Size = new System.Drawing.Size(758, 338);
+            this.kNPR_GG_CALC_RESDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "N";
+            this.dataGridViewTextBoxColumn23.HeaderText = "N";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "mGG";
+            this.dataGridViewTextBoxColumn24.HeaderText = "mGG";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "pGG";
+            this.dataGridViewTextBoxColumn25.HeaderText = "pGG";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "CnkprGG";
+            this.dataGridViewTextBoxColumn26.HeaderText = "CnkprGG";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "R_result_for_GG";
+            this.dataGridViewTextBoxColumn27.HeaderText = "R_result_for_GG";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "Z_result_for_GG";
+            this.dataGridViewTextBoxColumn28.HeaderText = "Z_result_for_GG";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            // 
+            // dataGridViewTextBoxColumn35
+            // 
+            this.dataGridViewTextBoxColumn35.DataPropertyName = "Rf_result_for_GG";
+            this.dataGridViewTextBoxColumn35.HeaderText = "Rf_result_for_GG";
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            // 
+            // kNPR_LVZH_CALC_RESDataGridView
+            // 
+            this.kNPR_LVZH_CALC_RESDataGridView.AutoGenerateColumns = false;
+            this.kNPR_LVZH_CALC_RESDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.kNPR_LVZH_CALC_RESDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn29,
+            this.dataGridViewTextBoxColumn30,
+            this.dataGridViewTextBoxColumn31,
+            this.dataGridViewTextBoxColumn32,
+            this.dataGridViewTextBoxColumn33,
+            this.dataGridViewTextBoxColumn34,
+            this.dataGridViewTextBoxColumn36});
+            this.kNPR_LVZH_CALC_RESDataGridView.DataSource = this.kNPR_LVZH_CALC_RESBindingSource2;
+            this.kNPR_LVZH_CALC_RESDataGridView.Location = new System.Drawing.Point(6, 6);
+            this.kNPR_LVZH_CALC_RESDataGridView.Name = "kNPR_LVZH_CALC_RESDataGridView";
+            this.kNPR_LVZH_CALC_RESDataGridView.Size = new System.Drawing.Size(758, 338);
+            this.kNPR_LVZH_CALC_RESDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "N";
+            this.dataGridViewTextBoxColumn29.HeaderText = "N";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "mPP";
+            this.dataGridViewTextBoxColumn30.HeaderText = "mPP";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "pPP";
+            this.dataGridViewTextBoxColumn31.HeaderText = "pPP";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "CnkprPP";
+            this.dataGridViewTextBoxColumn32.HeaderText = "CnkprPP";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "R_result_for_PP";
+            this.dataGridViewTextBoxColumn33.HeaderText = "R_result_for_PP";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "Z_result_for_PP";
+            this.dataGridViewTextBoxColumn34.HeaderText = "Z_result_for_PP";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            // 
+            // dataGridViewTextBoxColumn36
+            // 
+            this.dataGridViewTextBoxColumn36.DataPropertyName = "Rf_result_for_PP";
+            this.dataGridViewTextBoxColumn36.HeaderText = "Rf_result_for_PP";
+            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
             // 
             // Form1
             // 
@@ -895,15 +990,15 @@
             this.tabPage3.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.history_1eR1DataSet)).EndInit();
             this.tabPage5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.history_1eR1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_GG_CALC_RESDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kNPR_LVZH_CALC_RESDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -992,6 +1087,18 @@
         private System.Windows.Forms.BindingSource kNPR_GG_CALC_RESBindingSource1;
         private History_1eR1DataSetTableAdapters.KNPR_GG_CALC_RESTableAdapter kNPR_GG_CALC_RESTableAdapter;
         private History_1eR1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private History_1eR1DataSetTableAdapters.KNPR_LVZH_CALC_RESTableAdapter kNPR_LVZH_CALC_RESTableAdapter;
+        private System.Windows.Forms.BindingSource kNPR_LVZH_CALC_RESBindingSource2;
+        private System.Windows.Forms.Button ClearAllGGButton;
+        private System.Windows.Forms.Button ClearAllLVZHButton;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label Rf_result_for_GG;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button ClearOnlyVariableForGGButton;
+        private System.Windows.Forms.Button ClearOnlyVariableForLVZHButton;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label Rf_result_for_LVZH;
+        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.DataGridView kNPR_GG_CALC_RESDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
@@ -999,8 +1106,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-        private History_1eR1DataSetTableAdapters.KNPR_LVZH_CALC_RESTableAdapter kNPR_LVZH_CALC_RESTableAdapter;
-        private System.Windows.Forms.BindingSource kNPR_LVZH_CALC_RESBindingSource2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
         private System.Windows.Forms.DataGridView kNPR_LVZH_CALC_RESDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
@@ -1008,8 +1114,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
-        private System.Windows.Forms.Button ClearAllGGButton;
-        private System.Windows.Forms.Button ClearAllLVZHButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
     }
 }
 

@@ -42,9 +42,11 @@ namespace MVZPP_Calc
 
             R_result_for_GG.Text = "";
             Z_result_for_GG.Text = "";
+            Rf_result_for_GG.Text = "";
 
             R_result_for_LVZH.Text = "";
             Z_result_for_LVZH.Text = "";
+            Rf_result_for_LVZH.Text = "";
         }
 
         private void CalculateForGG_Click(object sender, EventArgs e)
@@ -61,8 +63,9 @@ namespace MVZPP_Calc
 
                 R_result_for_GG.Text = Convert.ToString(Math.Round(calculator.CalculateRadiusGG(), 6));
                 Z_result_for_GG.Text = Convert.ToString(Math.Round(calculator.CalculateZGG(), 6));
+                Rf_result_for_GG.Text = Convert.ToString(Math.Round(calculator.CalculateRfGG(), 6));
 
-                History.SaveDataGG(calculator.mGG, calculator.pGG, calculator.nkprGG, (calculator.CalculateRadiusGG()), (calculator.CalculateZGG()));
+                History.SaveDataGG(calculator.mGG, calculator.pGG, calculator.nkprGG, calculator.CalculateRadiusGG(), calculator.CalculateZGG(), calculator.CalculateRfGG());
             }
         }
 
@@ -86,8 +89,9 @@ namespace MVZPP_Calc
 
                 R_result_for_LVZH.Text = Convert.ToString(Math.Round(calculator.CalculateRadiusLVZH(), 6));
                 Z_result_for_LVZH.Text = Convert.ToString(Math.Round(calculator.CalculateZLVZH(), 6));
+                Rf_result_for_LVZH.Text = Convert.ToString(Math.Round(calculator.CalculateRfLVZH(), 6));
 
-                History.SaveDataLVZH(calculator.mLVZH, calculator.pLVZH, calculator.nkprLVZH, calculator.CalculateRadiusLVZH(), calculator.CalculateZLVZH());
+                History.SaveDataLVZH(calculator.mLVZH, calculator.pLVZH, calculator.nkprLVZH, calculator.CalculateRadiusLVZH(), calculator.CalculateZLVZH(), calculator.CalculateRfLVZH());
             }
         }
 
@@ -99,7 +103,7 @@ namespace MVZPP_Calc
             }
             else
             {
-                string ResultString = $" ОТЧЕТ ИЗМЕРЕНИЙ ОТ {DateTime.Get()}: \n Измерение нижнего концентрационного предела распространения пламени горючих газов (НКПР ГГ)\n мг = {calculator.mGG} кг\n ρг = {calculator.pGG} кг/м3\n Снкрп = {calculator.nkprGG} %\n Rнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateRadiusGG(), 6))} м\n Zнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateZGG(), 6))} м";
+                string ResultString = $" ОТЧЕТ ИЗМЕРЕНИЙ ОТ {DateTime.Get()}: \n Измерение нижнего концентрационного предела распространения пламени горючих газов (НКПР ГГ)\n мг = {calculator.mGG} кг\n ρг = {calculator.pGG} кг/м3\n Снкрп = {calculator.nkprGG} %\n Rнкпр = {Math.Round(calculator.CalculateRadiusGG(), 6)} м\n Zнкпр = {Math.Round(calculator.CalculateZGG(), 6)} м\n Rf = {Math.Round(calculator.CalculateRfGG(), 6)} м";
 
                 string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "calculator_results.txt");
                 File.WriteAllText(filePath, ResultString);
@@ -110,13 +114,13 @@ namespace MVZPP_Calc
 
         private void CreateResultFileForLVZH_Click(object sender, EventArgs e)
         {
-            if (mGG_Text.Text == "" || pGG_Text.Text == "" || nkprGG_Text.Text == "")
+            if (mLVZH_Text.Text == "" || mLVZH_Text.Text == "" || nkprLVZH_Text.Text == "")
             {
                 MessageBox.Show("Не все поля заполнены для создания отчёта!");
             }
             else
             {
-                string ResultString = $" ОТЧЕТ ИЗМЕРЕНИЙ ОТ {DateTime.Get()}: \n Измерение нижнего концентрационного предела распространения ЛВЖ (НКПР ЛВЖ)\n мп = {calculator.mLVZH} кг\n ρп = {calculator.pLVZH} кг/м3\n Снкрп = {calculator.nkprLVZH} %\n Rнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateRadiusLVZH(), 6))} м\n Zнкпр = {Convert.ToDouble(Math.Round(calculator.CalculateZLVZH(), 6))} м";
+                string ResultString = $" ОТЧЕТ ИЗМЕРЕНИЙ ОТ {DateTime.Get()}: \n Измерение нижнего концентрационного предела распространения ЛВЖ (НКПР ЛВЖ)\n мп = {calculator.mLVZH} кг\n ρп = {calculator.pLVZH} кг/м3\n Снкрп = {calculator.nkprLVZH} %\n Rнкпр = {Math.Round(calculator.CalculateRadiusLVZH(), 6)} м\n Zнкпр = {Math.Round(calculator.CalculateZLVZH(), 6)} м\n Rf = {Math.Round(calculator.CalculateRfLVZH(), 6)}";
 
                 string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "calculator_results.txt");
                 File.WriteAllText(filePath, ResultString);
@@ -137,6 +141,7 @@ namespace MVZPP_Calc
             nkprGG_Text.Text = "";
             R_result_for_GG.Text = "";
             Z_result_for_GG.Text = "";
+            Rf_result_for_GG.Text = "";
         }
 
         private void ClearAllLVZHButton_Click(object sender, EventArgs e)
@@ -146,6 +151,13 @@ namespace MVZPP_Calc
             nkprLVZH_Text.Text = "";
             R_result_for_LVZH.Text = "";
             Z_result_for_LVZH.Text = "";
+        }
+
+        private void ClearOnlyVariableForGGButton_Click(object sender, EventArgs e)
+        {
+            mGG_Text.Text = "";
+            pGG_Text.Text = "";
+            nkprGG_Text.Text = "";
         }
     }
 }

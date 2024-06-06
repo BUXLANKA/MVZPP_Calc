@@ -326,6 +326,8 @@ namespace MVZPP_Calc {
             
             private global::System.Data.DataColumn columnZ_result_for_GG;
             
+            private global::System.Data.DataColumn columnRf_result_for_GG;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public KNPR_GG_CALC_RESDataTable() {
@@ -409,6 +411,14 @@ namespace MVZPP_Calc {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Rf_result_for_GGColumn {
+                get {
+                    return this.columnRf_result_for_GG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -444,7 +454,7 @@ namespace MVZPP_Calc {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public KNPR_GG_CALC_RESRow AddKNPR_GG_CALC_RESRow(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG) {
+            public KNPR_GG_CALC_RESRow AddKNPR_GG_CALC_RESRow(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG, double Rf_result_for_GG) {
                 KNPR_GG_CALC_RESRow rowKNPR_GG_CALC_RESRow = ((KNPR_GG_CALC_RESRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -452,7 +462,8 @@ namespace MVZPP_Calc {
                         pGG,
                         CnkprGG,
                         R_result_for_GG,
-                        Z_result_for_GG};
+                        Z_result_for_GG,
+                        Rf_result_for_GG};
                 rowKNPR_GG_CALC_RESRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowKNPR_GG_CALC_RESRow);
                 return rowKNPR_GG_CALC_RESRow;
@@ -488,6 +499,7 @@ namespace MVZPP_Calc {
                 this.columnCnkprGG = base.Columns["CnkprGG"];
                 this.columnR_result_for_GG = base.Columns["R_result_for_GG"];
                 this.columnZ_result_for_GG = base.Columns["Z_result_for_GG"];
+                this.columnRf_result_for_GG = base.Columns["Rf_result_for_GG"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -505,6 +517,8 @@ namespace MVZPP_Calc {
                 base.Columns.Add(this.columnR_result_for_GG);
                 this.columnZ_result_for_GG = new global::System.Data.DataColumn("Z_result_for_GG", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnZ_result_for_GG);
+                this.columnRf_result_for_GG = new global::System.Data.DataColumn("Rf_result_for_GG", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRf_result_for_GG);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnN}, true));
                 this.columnN.AutoIncrement = true;
@@ -518,6 +532,7 @@ namespace MVZPP_Calc {
                 this.columnCnkprGG.AllowDBNull = false;
                 this.columnR_result_for_GG.AllowDBNull = false;
                 this.columnZ_result_for_GG.AllowDBNull = false;
+                this.columnRf_result_for_GG.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -663,6 +678,8 @@ namespace MVZPP_Calc {
             
             private global::System.Data.DataColumn columnZ_result_for_PP;
             
+            private global::System.Data.DataColumn columnRf_result_for_PP;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public KNPR_LVZH_CALC_RESDataTable() {
@@ -746,6 +763,14 @@ namespace MVZPP_Calc {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Rf_result_for_PPColumn {
+                get {
+                    return this.columnRf_result_for_PP;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -781,7 +806,7 @@ namespace MVZPP_Calc {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public KNPR_LVZH_CALC_RESRow AddKNPR_LVZH_CALC_RESRow(double mPP, double pPP, double CnkprPP, double R_result_for_PP, double Z_result_for_PP) {
+            public KNPR_LVZH_CALC_RESRow AddKNPR_LVZH_CALC_RESRow(double mPP, double pPP, double CnkprPP, double R_result_for_PP, double Z_result_for_PP, double Rf_result_for_PP) {
                 KNPR_LVZH_CALC_RESRow rowKNPR_LVZH_CALC_RESRow = ((KNPR_LVZH_CALC_RESRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -789,7 +814,8 @@ namespace MVZPP_Calc {
                         pPP,
                         CnkprPP,
                         R_result_for_PP,
-                        Z_result_for_PP};
+                        Z_result_for_PP,
+                        Rf_result_for_PP};
                 rowKNPR_LVZH_CALC_RESRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowKNPR_LVZH_CALC_RESRow);
                 return rowKNPR_LVZH_CALC_RESRow;
@@ -825,6 +851,7 @@ namespace MVZPP_Calc {
                 this.columnCnkprPP = base.Columns["CnkprPP"];
                 this.columnR_result_for_PP = base.Columns["R_result_for_PP"];
                 this.columnZ_result_for_PP = base.Columns["Z_result_for_PP"];
+                this.columnRf_result_for_PP = base.Columns["Rf_result_for_PP"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -842,6 +869,8 @@ namespace MVZPP_Calc {
                 base.Columns.Add(this.columnR_result_for_PP);
                 this.columnZ_result_for_PP = new global::System.Data.DataColumn("Z_result_for_PP", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnZ_result_for_PP);
+                this.columnRf_result_for_PP = new global::System.Data.DataColumn("Rf_result_for_PP", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRf_result_for_PP);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnN}, true));
                 this.columnN.AutoIncrement = true;
@@ -855,6 +884,7 @@ namespace MVZPP_Calc {
                 this.columnCnkprPP.AllowDBNull = false;
                 this.columnR_result_for_PP.AllowDBNull = false;
                 this.columnZ_result_for_PP.AllowDBNull = false;
+                this.columnRf_result_for_PP.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1060,6 +1090,17 @@ namespace MVZPP_Calc {
                     this[this.tableKNPR_GG_CALC_RES.Z_result_for_GGColumn] = value;
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double Rf_result_for_GG {
+                get {
+                    return ((double)(this[this.tableKNPR_GG_CALC_RES.Rf_result_for_GGColumn]));
+                }
+                set {
+                    this[this.tableKNPR_GG_CALC_RES.Rf_result_for_GGColumn] = value;
+                }
+            }
         }
         
         /// <summary>
@@ -1139,6 +1180,17 @@ namespace MVZPP_Calc {
                 }
                 set {
                     this[this.tableKNPR_LVZH_CALC_RES.Z_result_for_PPColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double Rf_result_for_PP {
+                get {
+                    return ((double)(this[this.tableKNPR_LVZH_CALC_RES.Rf_result_for_PPColumn]));
+                }
+                set {
+                    this[this.tableKNPR_LVZH_CALC_RES.Rf_result_for_PPColumn] = value;
                 }
             }
         }
@@ -1342,10 +1394,11 @@ namespace MVZPP_Calc.History_1eR1DataSetTableAdapters {
             tableMapping.ColumnMappings.Add("CnkprGG", "CnkprGG");
             tableMapping.ColumnMappings.Add("R_result_for_GG", "R_result_for_GG");
             tableMapping.ColumnMappings.Add("Z_result_for_GG", "Z_result_for_GG");
+            tableMapping.ColumnMappings.Add("Rf_result_for_GG", "Rf_result_for_GG");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[KNPR_GG_CALC_RES] WHERE (([N] = @Original_N) AND ([mGG] = @Original_mGG) AND ([pGG] = @Original_pGG) AND ([CnkprGG] = @Original_CnkprGG) AND ([R_result_for_GG] = @Original_R_result_for_GG) AND ([Z_result_for_GG] = @Original_Z_result_for_GG))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [KNPR_GG_CALC_RES] WHERE (([N] = @Original_N) AND ([mGG] = @Original_mGG) AND ([pGG] = @Original_pGG) AND ([CnkprGG] = @Original_CnkprGG) AND ([R_result_for_GG] = @Original_R_result_for_GG) AND ([Z_result_for_GG] = @Original_Z_result_for_GG) AND ([Rf_result_for_GG] = @Original_Rf_result_for_GG))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_N", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "N", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_mGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mGG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1353,32 +1406,36 @@ namespace MVZPP_Calc.History_1eR1DataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CnkprGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CnkprGG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_R_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "R_result_for_GG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Z_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Z_result_for_GG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Rf_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rf_result_for_GG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[KNPR_GG_CALC_RES] ([mGG], [pGG], [CnkprGG], [R_result_for_GG], [Z_result_for_GG]) VALUES (@mGG, @pGG, @CnkprGG, @R_result_for_GG, @Z_result_for_GG);
-SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG FROM KNPR_GG_CALC_RES WHERE (N = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [KNPR_GG_CALC_RES] ([mGG], [pGG], [CnkprGG], [R_result_for_GG], [Z_result_for_GG], [Rf_result_for_GG]) VALUES (@mGG, @pGG, @CnkprGG, @R_result_for_GG, @Z_result_for_GG, @Rf_result_for_GG);
+SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG, Rf_result_for_GG FROM KNPR_GG_CALC_RES WHERE (N = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mGG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pGG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CnkprGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CnkprGG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@R_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "R_result_for_GG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Z_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Z_result_for_GG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rf_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rf_result_for_GG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[KNPR_GG_CALC_RES] SET [mGG] = @mGG, [pGG] = @pGG, [CnkprGG] = @CnkprGG, [R_result_for_GG] = @R_result_for_GG, [Z_result_for_GG] = @Z_result_for_GG WHERE (([N] = @Original_N) AND ([mGG] = @Original_mGG) AND ([pGG] = @Original_pGG) AND ([CnkprGG] = @Original_CnkprGG) AND ([R_result_for_GG] = @Original_R_result_for_GG) AND ([Z_result_for_GG] = @Original_Z_result_for_GG));
-SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG FROM KNPR_GG_CALC_RES WHERE (N = @N)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [KNPR_GG_CALC_RES] SET [mGG] = @mGG, [pGG] = @pGG, [CnkprGG] = @CnkprGG, [R_result_for_GG] = @R_result_for_GG, [Z_result_for_GG] = @Z_result_for_GG, [Rf_result_for_GG] = @Rf_result_for_GG WHERE (([N] = @Original_N) AND ([mGG] = @Original_mGG) AND ([pGG] = @Original_pGG) AND ([CnkprGG] = @Original_CnkprGG) AND ([R_result_for_GG] = @Original_R_result_for_GG) AND ([Z_result_for_GG] = @Original_Z_result_for_GG) AND ([Rf_result_for_GG] = @Original_Rf_result_for_GG));
+SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG, Rf_result_for_GG FROM KNPR_GG_CALC_RES WHERE (N = @N)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mGG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pGG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CnkprGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CnkprGG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@R_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "R_result_for_GG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Z_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Z_result_for_GG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rf_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rf_result_for_GG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_N", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "N", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_mGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mGG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pGG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CnkprGG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CnkprGG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_R_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "R_result_for_GG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Z_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Z_result_for_GG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Rf_result_for_GG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rf_result_for_GG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@N", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "N", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -1395,8 +1452,8 @@ SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG FROM KNPR_GG_CALC_
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG FROM dbo.KNPR_GG_CA" +
-                "LC_RES";
+            this._commandCollection[0].CommandText = "SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG, Rf_result_for_GG F" +
+                "ROM KNPR_GG_CALC_RES";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1457,13 +1514,14 @@ SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG FROM KNPR_GG_CALC_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_N, double Original_mGG, double Original_pGG, double Original_CnkprGG, double Original_R_result_for_GG, double Original_Z_result_for_GG) {
+        public virtual int Delete(int Original_N, double Original_mGG, double Original_pGG, double Original_CnkprGG, double Original_R_result_for_GG, double Original_Z_result_for_GG, double Original_Rf_result_for_GG) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_N));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((double)(Original_mGG));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((double)(Original_pGG));
             this.Adapter.DeleteCommand.Parameters[3].Value = ((double)(Original_CnkprGG));
             this.Adapter.DeleteCommand.Parameters[4].Value = ((double)(Original_R_result_for_GG));
             this.Adapter.DeleteCommand.Parameters[5].Value = ((double)(Original_Z_result_for_GG));
+            this.Adapter.DeleteCommand.Parameters[6].Value = ((double)(Original_Rf_result_for_GG));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1484,12 +1542,13 @@ SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG FROM KNPR_GG_CALC_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG) {
+        public virtual int Insert(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG, double Rf_result_for_GG) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((double)(mGG));
             this.Adapter.InsertCommand.Parameters[1].Value = ((double)(pGG));
             this.Adapter.InsertCommand.Parameters[2].Value = ((double)(CnkprGG));
             this.Adapter.InsertCommand.Parameters[3].Value = ((double)(R_result_for_GG));
             this.Adapter.InsertCommand.Parameters[4].Value = ((double)(Z_result_for_GG));
+            this.Adapter.InsertCommand.Parameters[5].Value = ((double)(Rf_result_for_GG));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1510,19 +1569,21 @@ SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG FROM KNPR_GG_CALC_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG, int Original_N, double Original_mGG, double Original_pGG, double Original_CnkprGG, double Original_R_result_for_GG, double Original_Z_result_for_GG, int N) {
+        public virtual int Update(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG, double Rf_result_for_GG, int Original_N, double Original_mGG, double Original_pGG, double Original_CnkprGG, double Original_R_result_for_GG, double Original_Z_result_for_GG, double Original_Rf_result_for_GG, int N) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((double)(mGG));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((double)(pGG));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((double)(CnkprGG));
             this.Adapter.UpdateCommand.Parameters[3].Value = ((double)(R_result_for_GG));
             this.Adapter.UpdateCommand.Parameters[4].Value = ((double)(Z_result_for_GG));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_N));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((double)(Original_mGG));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((double)(Original_pGG));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((double)(Original_CnkprGG));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((double)(Original_R_result_for_GG));
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((double)(Original_Z_result_for_GG));
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(N));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((double)(Rf_result_for_GG));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_N));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((double)(Original_mGG));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((double)(Original_pGG));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((double)(Original_CnkprGG));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((double)(Original_R_result_for_GG));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((double)(Original_Z_result_for_GG));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((double)(Original_Rf_result_for_GG));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(N));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1543,8 +1604,8 @@ SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG FROM KNPR_GG_CALC_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG, int Original_N, double Original_mGG, double Original_pGG, double Original_CnkprGG, double Original_R_result_for_GG, double Original_Z_result_for_GG) {
-            return this.Update(mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG, Original_N, Original_mGG, Original_pGG, Original_CnkprGG, Original_R_result_for_GG, Original_Z_result_for_GG, Original_N);
+        public virtual int Update(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG, double Rf_result_for_GG, int Original_N, double Original_mGG, double Original_pGG, double Original_CnkprGG, double Original_R_result_for_GG, double Original_Z_result_for_GG, double Original_Rf_result_for_GG) {
+            return this.Update(mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG, Rf_result_for_GG, Original_N, Original_mGG, Original_pGG, Original_CnkprGG, Original_R_result_for_GG, Original_Z_result_for_GG, Original_Rf_result_for_GG, Original_N);
         }
     }
     
@@ -1675,10 +1736,11 @@ SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG FROM KNPR_GG_CALC_
             tableMapping.ColumnMappings.Add("CnkprPP", "CnkprPP");
             tableMapping.ColumnMappings.Add("R_result_for_PP", "R_result_for_PP");
             tableMapping.ColumnMappings.Add("Z_result_for_PP", "Z_result_for_PP");
+            tableMapping.ColumnMappings.Add("Rf_result_for_PP", "Rf_result_for_PP");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[KNPR_LVZH_CALC_RES] WHERE (([N] = @Original_N) AND ([mPP] = @Original_mPP) AND ([pPP] = @Original_pPP) AND ([CnkprPP] = @Original_CnkprPP) AND ([R_result_for_PP] = @Original_R_result_for_PP) AND ([Z_result_for_PP] = @Original_Z_result_for_PP))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [KNPR_LVZH_CALC_RES] WHERE (([N] = @Original_N) AND ([mPP] = @Original_mPP) AND ([pPP] = @Original_pPP) AND ([CnkprPP] = @Original_CnkprPP) AND ([R_result_for_PP] = @Original_R_result_for_PP) AND ([Z_result_for_PP] = @Original_Z_result_for_PP) AND ([Rf_result_for_PP] = @Original_Rf_result_for_PP))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_N", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "N", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_mPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mPP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1686,32 +1748,36 @@ SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG FROM KNPR_GG_CALC_
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CnkprPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CnkprPP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_R_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "R_result_for_PP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Z_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Z_result_for_PP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Rf_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rf_result_for_PP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[KNPR_LVZH_CALC_RES] ([mPP], [pPP], [CnkprPP], [R_result_for_PP], [Z_result_for_PP]) VALUES (@mPP, @pPP, @CnkprPP, @R_result_for_PP, @Z_result_for_PP);
-SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP FROM KNPR_LVZH_CALC_RES WHERE (N = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [KNPR_LVZH_CALC_RES] ([mPP], [pPP], [CnkprPP], [R_result_for_PP], [Z_result_for_PP], [Rf_result_for_PP]) VALUES (@mPP, @pPP, @CnkprPP, @R_result_for_PP, @Z_result_for_PP, @Rf_result_for_PP);
+SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP, Rf_result_for_PP FROM KNPR_LVZH_CALC_RES WHERE (N = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mPP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pPP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CnkprPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CnkprPP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@R_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "R_result_for_PP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Z_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Z_result_for_PP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rf_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rf_result_for_PP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[KNPR_LVZH_CALC_RES] SET [mPP] = @mPP, [pPP] = @pPP, [CnkprPP] = @CnkprPP, [R_result_for_PP] = @R_result_for_PP, [Z_result_for_PP] = @Z_result_for_PP WHERE (([N] = @Original_N) AND ([mPP] = @Original_mPP) AND ([pPP] = @Original_pPP) AND ([CnkprPP] = @Original_CnkprPP) AND ([R_result_for_PP] = @Original_R_result_for_PP) AND ([Z_result_for_PP] = @Original_Z_result_for_PP));
-SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP FROM KNPR_LVZH_CALC_RES WHERE (N = @N)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [KNPR_LVZH_CALC_RES] SET [mPP] = @mPP, [pPP] = @pPP, [CnkprPP] = @CnkprPP, [R_result_for_PP] = @R_result_for_PP, [Z_result_for_PP] = @Z_result_for_PP, [Rf_result_for_PP] = @Rf_result_for_PP WHERE (([N] = @Original_N) AND ([mPP] = @Original_mPP) AND ([pPP] = @Original_pPP) AND ([CnkprPP] = @Original_CnkprPP) AND ([R_result_for_PP] = @Original_R_result_for_PP) AND ([Z_result_for_PP] = @Original_Z_result_for_PP) AND ([Rf_result_for_PP] = @Original_Rf_result_for_PP));
+SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP, Rf_result_for_PP FROM KNPR_LVZH_CALC_RES WHERE (N = @N)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mPP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pPP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CnkprPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CnkprPP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@R_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "R_result_for_PP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Z_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Z_result_for_PP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rf_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rf_result_for_PP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_N", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "N", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_mPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mPP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pPP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CnkprPP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CnkprPP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_R_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "R_result_for_PP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Z_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Z_result_for_PP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Rf_result_for_PP", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rf_result_for_PP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@N", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "N", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -1728,8 +1794,8 @@ SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP FROM KNPR_LVZH_CAL
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP FROM dbo.KNPR_LVZH_" +
-                "CALC_RES";
+            this._commandCollection[0].CommandText = "SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP, Rf_result_for_PP F" +
+                "ROM KNPR_LVZH_CALC_RES";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1790,13 +1856,14 @@ SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP FROM KNPR_LVZH_CAL
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_N, double Original_mPP, double Original_pPP, double Original_CnkprPP, double Original_R_result_for_PP, double Original_Z_result_for_PP) {
+        public virtual int Delete(int Original_N, double Original_mPP, double Original_pPP, double Original_CnkprPP, double Original_R_result_for_PP, double Original_Z_result_for_PP, double Original_Rf_result_for_PP) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_N));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((double)(Original_mPP));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((double)(Original_pPP));
             this.Adapter.DeleteCommand.Parameters[3].Value = ((double)(Original_CnkprPP));
             this.Adapter.DeleteCommand.Parameters[4].Value = ((double)(Original_R_result_for_PP));
             this.Adapter.DeleteCommand.Parameters[5].Value = ((double)(Original_Z_result_for_PP));
+            this.Adapter.DeleteCommand.Parameters[6].Value = ((double)(Original_Rf_result_for_PP));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1817,12 +1884,13 @@ SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP FROM KNPR_LVZH_CAL
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(double mPP, double pPP, double CnkprPP, double R_result_for_PP, double Z_result_for_PP) {
+        public virtual int Insert(double mPP, double pPP, double CnkprPP, double R_result_for_PP, double Z_result_for_PP, double Rf_result_for_PP) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((double)(mPP));
             this.Adapter.InsertCommand.Parameters[1].Value = ((double)(pPP));
             this.Adapter.InsertCommand.Parameters[2].Value = ((double)(CnkprPP));
             this.Adapter.InsertCommand.Parameters[3].Value = ((double)(R_result_for_PP));
             this.Adapter.InsertCommand.Parameters[4].Value = ((double)(Z_result_for_PP));
+            this.Adapter.InsertCommand.Parameters[5].Value = ((double)(Rf_result_for_PP));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1843,19 +1911,21 @@ SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP FROM KNPR_LVZH_CAL
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(double mPP, double pPP, double CnkprPP, double R_result_for_PP, double Z_result_for_PP, int Original_N, double Original_mPP, double Original_pPP, double Original_CnkprPP, double Original_R_result_for_PP, double Original_Z_result_for_PP, int N) {
+        public virtual int Update(double mPP, double pPP, double CnkprPP, double R_result_for_PP, double Z_result_for_PP, double Rf_result_for_PP, int Original_N, double Original_mPP, double Original_pPP, double Original_CnkprPP, double Original_R_result_for_PP, double Original_Z_result_for_PP, double Original_Rf_result_for_PP, int N) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((double)(mPP));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((double)(pPP));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((double)(CnkprPP));
             this.Adapter.UpdateCommand.Parameters[3].Value = ((double)(R_result_for_PP));
             this.Adapter.UpdateCommand.Parameters[4].Value = ((double)(Z_result_for_PP));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_N));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((double)(Original_mPP));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((double)(Original_pPP));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((double)(Original_CnkprPP));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((double)(Original_R_result_for_PP));
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((double)(Original_Z_result_for_PP));
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(N));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((double)(Rf_result_for_PP));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_N));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((double)(Original_mPP));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((double)(Original_pPP));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((double)(Original_CnkprPP));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((double)(Original_R_result_for_PP));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((double)(Original_Z_result_for_PP));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((double)(Original_Rf_result_for_PP));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(N));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1876,8 +1946,8 @@ SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP FROM KNPR_LVZH_CAL
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(double mPP, double pPP, double CnkprPP, double R_result_for_PP, double Z_result_for_PP, int Original_N, double Original_mPP, double Original_pPP, double Original_CnkprPP, double Original_R_result_for_PP, double Original_Z_result_for_PP) {
-            return this.Update(mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP, Original_N, Original_mPP, Original_pPP, Original_CnkprPP, Original_R_result_for_PP, Original_Z_result_for_PP, Original_N);
+        public virtual int Update(double mPP, double pPP, double CnkprPP, double R_result_for_PP, double Z_result_for_PP, double Rf_result_for_PP, int Original_N, double Original_mPP, double Original_pPP, double Original_CnkprPP, double Original_R_result_for_PP, double Original_Z_result_for_PP, double Original_Rf_result_for_PP) {
+            return this.Update(mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP, Rf_result_for_PP, Original_N, Original_mPP, Original_pPP, Original_CnkprPP, Original_R_result_for_PP, Original_Z_result_for_PP, Original_Rf_result_for_PP, Original_N);
         }
     }
     

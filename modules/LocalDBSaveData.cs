@@ -15,10 +15,10 @@ namespace MVZPP_Calc.modules
     {
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\buxwm\source\repos\MVZPP_Calc\databases\History_1eR1.mdf;Integrated Security=True";
 
-        public void SaveDataGG(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG)
+        public void SaveDataGG(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG, double Rf_result_for_GG)
         {
             // SQL-запрос для вставки данных
-            string query = "INSERT INTO KNPR_GG_CALC_RES (mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG) VALUES (@mGG, @pGG, @CnkprGG, @R_result_for_GG, @Z_result_for_GG)";
+            string query = "INSERT INTO KNPR_GG_CALC_RES (mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG, Rf_result_for_GG) VALUES (@mGG, @pGG, @CnkprGG, @R_result_for_GG, @Z_result_for_GG, @Rf_result_for_GG)";
 
             // Создаем подключение к базе данных
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -32,6 +32,7 @@ namespace MVZPP_Calc.modules
                 command.Parameters.AddWithValue("@CnkprGG", CnkprGG);
                 command.Parameters.AddWithValue("@R_result_for_GG", R_result_for_GG);
                 command.Parameters.AddWithValue("@Z_result_for_GG", Z_result_for_GG);
+                command.Parameters.AddWithValue("@Rf_result_for_GG", Rf_result_for_GG);
 
                 try
                 {
@@ -50,10 +51,10 @@ namespace MVZPP_Calc.modules
             }
         }
 
-        public void SaveDataLVZH(double mPP, double pPP, double CnkprPP, double R_result_for_PP, double Z_result_for_PP)
+        public void SaveDataLVZH(double mPP, double pPP, double CnkprPP, double R_result_for_PP, double Z_result_for_PP, double Rf_result_for_PP)
         {
             // SQL-запрос для вставки данных
-            string query = "INSERT INTO KNPR_LVZH_CALC_RES (mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP) VALUES (@mPP, @pPP, @CnkprPP, @R_result_for_PP, @Z_result_for_PP)";
+            string query = "INSERT INTO KNPR_LVZH_CALC_RES (mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP, Rf_result_for_PP) VALUES (@mPP, @pPP, @CnkprPP, @R_result_for_PP, @Z_result_for_PP, @Rf_result_for_PP)";
 
             // Создаем подключение к базе данных
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -67,6 +68,7 @@ namespace MVZPP_Calc.modules
                 command.Parameters.AddWithValue("@CnkprPP", CnkprPP);
                 command.Parameters.AddWithValue("@R_result_for_PP", R_result_for_PP);
                 command.Parameters.AddWithValue("@Z_result_for_PP", Z_result_for_PP);
+                command.Parameters.AddWithValue("@Rf_result_for_PP", Rf_result_for_PP);
 
                 try
                 {
