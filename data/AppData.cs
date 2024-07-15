@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using MVZPP_Calc.net8.model;
 
 namespace MVZPP_Calc.net8.data
@@ -10,7 +11,7 @@ namespace MVZPP_Calc.net8.data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=1elocal.db");
+            optionsBuilder.UseSqlite("Data Source=./data/local/AppLocalDBSet.db");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

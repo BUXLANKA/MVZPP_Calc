@@ -92,24 +92,24 @@
             tabControl2 = new TabControl();
             tabPage4 = new TabPage();
             dataGridView1 = new DataGridView();
-            nDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            mGGDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            pGGDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            cnkprGGDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            rresultforGGDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            zresultforGGDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            rfresultforGGDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn7 = new DataGridViewTextBoxColumn();
             kNPRGGCALCRESBindingSource = new BindingSource(components);
             tabPage5 = new TabPage();
             dataGridView2 = new DataGridView();
-            nDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            mPPDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            pPPDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            cnkprPPDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            rresultforPPDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            zresultforPPDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            rfresultforPPDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nKPRLVZHCALCRESBindingSource = new BindingSource(components);
+            dataGridViewTextBoxColumn8 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn9 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn10 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn11 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn12 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn13 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn14 = new DataGridViewTextBoxColumn();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -671,6 +671,7 @@
             ClearOnlyVariableForLVZHButton.TabIndex = 12;
             ClearOnlyVariableForLVZHButton.Text = "Очистить";
             ClearOnlyVariableForLVZHButton.UseVisualStyleBackColor = true;
+            ClearOnlyVariableForLVZHButton.Click += ClearOnlyVariableForLVZHButton_Click;
             // 
             // CalculateForLVZH
             // 
@@ -843,7 +844,7 @@
             tabPage4.Padding = new Padding(4);
             tabPage4.Size = new Size(900, 434);
             tabPage4.TabIndex = 0;
-            tabPage4.Text = "Расчёты НКПРГГ";
+            tabPage4.Text = "Расчёты НКПР ГГ";
             tabPage4.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
@@ -852,7 +853,7 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nDataGridViewTextBoxColumn, mGGDataGridViewTextBoxColumn, pGGDataGridViewTextBoxColumn, cnkprGGDataGridViewTextBoxColumn, rresultforGGDataGridViewTextBoxColumn, zresultforGGDataGridViewTextBoxColumn, rfresultforGGDataGridViewTextBoxColumn });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6, dataGridViewTextBoxColumn7 });
             dataGridView1.DataSource = kNPRGGCALCRESBindingSource;
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.Location = new Point(4, 4);
@@ -861,54 +862,54 @@
             dataGridView1.Size = new Size(892, 426);
             dataGridView1.TabIndex = 0;
             // 
-            // nDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            nDataGridViewTextBoxColumn.DataPropertyName = "N";
-            nDataGridViewTextBoxColumn.HeaderText = "N";
-            nDataGridViewTextBoxColumn.Name = "nDataGridViewTextBoxColumn";
-            nDataGridViewTextBoxColumn.ReadOnly = true;
+            dataGridViewTextBoxColumn1.DataPropertyName = "N";
+            dataGridViewTextBoxColumn1.HeaderText = "N";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // mGGDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            mGGDataGridViewTextBoxColumn.DataPropertyName = "mGG";
-            mGGDataGridViewTextBoxColumn.HeaderText = "mGG";
-            mGGDataGridViewTextBoxColumn.Name = "mGGDataGridViewTextBoxColumn";
-            mGGDataGridViewTextBoxColumn.ReadOnly = true;
+            dataGridViewTextBoxColumn2.DataPropertyName = "mGG";
+            dataGridViewTextBoxColumn2.HeaderText = "m ГГ (кг)";
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // pGGDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn3
             // 
-            pGGDataGridViewTextBoxColumn.DataPropertyName = "pGG";
-            pGGDataGridViewTextBoxColumn.HeaderText = "pGG";
-            pGGDataGridViewTextBoxColumn.Name = "pGGDataGridViewTextBoxColumn";
-            pGGDataGridViewTextBoxColumn.ReadOnly = true;
+            dataGridViewTextBoxColumn3.DataPropertyName = "pGG";
+            dataGridViewTextBoxColumn3.HeaderText = "p ГГ (кг/м3)";
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // cnkprGGDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn4
             // 
-            cnkprGGDataGridViewTextBoxColumn.DataPropertyName = "CnkprGG";
-            cnkprGGDataGridViewTextBoxColumn.HeaderText = "CnkprGG";
-            cnkprGGDataGridViewTextBoxColumn.Name = "cnkprGGDataGridViewTextBoxColumn";
-            cnkprGGDataGridViewTextBoxColumn.ReadOnly = true;
+            dataGridViewTextBoxColumn4.DataPropertyName = "CnkprGG";
+            dataGridViewTextBoxColumn4.HeaderText = "Cнкпр (%)";
+            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // rresultforGGDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn5
             // 
-            rresultforGGDataGridViewTextBoxColumn.DataPropertyName = "R_result_for_GG";
-            rresultforGGDataGridViewTextBoxColumn.HeaderText = "R_result_for_GG";
-            rresultforGGDataGridViewTextBoxColumn.Name = "rresultforGGDataGridViewTextBoxColumn";
-            rresultforGGDataGridViewTextBoxColumn.ReadOnly = true;
+            dataGridViewTextBoxColumn5.DataPropertyName = "R_result_for_GG";
+            dataGridViewTextBoxColumn5.HeaderText = "Rнкпр";
+            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
-            // zresultforGGDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn6
             // 
-            zresultforGGDataGridViewTextBoxColumn.DataPropertyName = "Z_result_for_GG";
-            zresultforGGDataGridViewTextBoxColumn.HeaderText = "Z_result_for_GG";
-            zresultforGGDataGridViewTextBoxColumn.Name = "zresultforGGDataGridViewTextBoxColumn";
-            zresultforGGDataGridViewTextBoxColumn.ReadOnly = true;
+            dataGridViewTextBoxColumn6.DataPropertyName = "Z_result_for_GG";
+            dataGridViewTextBoxColumn6.HeaderText = "Zнкпр";
+            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // rfresultforGGDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn7
             // 
-            rfresultforGGDataGridViewTextBoxColumn.DataPropertyName = "Rf_result_for_GG";
-            rfresultforGGDataGridViewTextBoxColumn.HeaderText = "Rf_result_for_GG";
-            rfresultforGGDataGridViewTextBoxColumn.Name = "rfresultforGGDataGridViewTextBoxColumn";
-            rfresultforGGDataGridViewTextBoxColumn.ReadOnly = true;
+            dataGridViewTextBoxColumn7.DataPropertyName = "Rf_result_for_GG";
+            dataGridViewTextBoxColumn7.HeaderText = "Rfнкпр";
+            dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // kNPRGGCALCRESBindingSource
             // 
@@ -924,7 +925,7 @@
             tabPage5.Padding = new Padding(4);
             tabPage5.Size = new Size(900, 434);
             tabPage5.TabIndex = 1;
-            tabPage5.Text = "Расчёты НКПРЛВЖ";
+            tabPage5.Text = "Расчёты НКПР ЛВЖ";
             tabPage5.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
@@ -933,7 +934,7 @@
             dataGridView2.AllowUserToDeleteRows = false;
             dataGridView2.AutoGenerateColumns = false;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { nDataGridViewTextBoxColumn1, mPPDataGridViewTextBoxColumn, pPPDataGridViewTextBoxColumn, cnkprPPDataGridViewTextBoxColumn, rresultforPPDataGridViewTextBoxColumn, zresultforPPDataGridViewTextBoxColumn, rfresultforPPDataGridViewTextBoxColumn });
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn8, dataGridViewTextBoxColumn9, dataGridViewTextBoxColumn10, dataGridViewTextBoxColumn11, dataGridViewTextBoxColumn12, dataGridViewTextBoxColumn13, dataGridViewTextBoxColumn14 });
             dataGridView2.DataSource = nKPRLVZHCALCRESBindingSource;
             dataGridView2.Location = new Point(4, 4);
             dataGridView2.Name = "dataGridView2";
@@ -941,58 +942,58 @@
             dataGridView2.Size = new Size(892, 426);
             dataGridView2.TabIndex = 0;
             // 
-            // nDataGridViewTextBoxColumn1
-            // 
-            nDataGridViewTextBoxColumn1.DataPropertyName = "N";
-            nDataGridViewTextBoxColumn1.HeaderText = "N";
-            nDataGridViewTextBoxColumn1.Name = "nDataGridViewTextBoxColumn1";
-            nDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // mPPDataGridViewTextBoxColumn
-            // 
-            mPPDataGridViewTextBoxColumn.DataPropertyName = "mPP";
-            mPPDataGridViewTextBoxColumn.HeaderText = "mPP";
-            mPPDataGridViewTextBoxColumn.Name = "mPPDataGridViewTextBoxColumn";
-            mPPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pPPDataGridViewTextBoxColumn
-            // 
-            pPPDataGridViewTextBoxColumn.DataPropertyName = "pPP";
-            pPPDataGridViewTextBoxColumn.HeaderText = "pPP";
-            pPPDataGridViewTextBoxColumn.Name = "pPPDataGridViewTextBoxColumn";
-            pPPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cnkprPPDataGridViewTextBoxColumn
-            // 
-            cnkprPPDataGridViewTextBoxColumn.DataPropertyName = "CnkprPP";
-            cnkprPPDataGridViewTextBoxColumn.HeaderText = "CnkprPP";
-            cnkprPPDataGridViewTextBoxColumn.Name = "cnkprPPDataGridViewTextBoxColumn";
-            cnkprPPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // rresultforPPDataGridViewTextBoxColumn
-            // 
-            rresultforPPDataGridViewTextBoxColumn.DataPropertyName = "R_result_for_PP";
-            rresultforPPDataGridViewTextBoxColumn.HeaderText = "R_result_for_PP";
-            rresultforPPDataGridViewTextBoxColumn.Name = "rresultforPPDataGridViewTextBoxColumn";
-            rresultforPPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // zresultforPPDataGridViewTextBoxColumn
-            // 
-            zresultforPPDataGridViewTextBoxColumn.DataPropertyName = "Z_result_for_PP";
-            zresultforPPDataGridViewTextBoxColumn.HeaderText = "Z_result_for_PP";
-            zresultforPPDataGridViewTextBoxColumn.Name = "zresultforPPDataGridViewTextBoxColumn";
-            zresultforPPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // rfresultforPPDataGridViewTextBoxColumn
-            // 
-            rfresultforPPDataGridViewTextBoxColumn.DataPropertyName = "Rf_result_for_PP";
-            rfresultforPPDataGridViewTextBoxColumn.HeaderText = "Rf_result_for_PP";
-            rfresultforPPDataGridViewTextBoxColumn.Name = "rfresultforPPDataGridViewTextBoxColumn";
-            rfresultforPPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // nKPRLVZHCALCRESBindingSource
             // 
             nKPRLVZHCALCRESBindingSource.DataSource = typeof(net8.model.NKPR_LVZH_CALC_RES);
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            dataGridViewTextBoxColumn8.DataPropertyName = "N";
+            dataGridViewTextBoxColumn8.HeaderText = "N";
+            dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            dataGridViewTextBoxColumn9.DataPropertyName = "mPP";
+            dataGridViewTextBoxColumn9.HeaderText = "m испарения (кг)";
+            dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            dataGridViewTextBoxColumn10.DataPropertyName = "pPP";
+            dataGridViewTextBoxColumn10.HeaderText = "p паров ЛВЖ (кг/м3)";
+            dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            dataGridViewTextBoxColumn11.DataPropertyName = "CnkprPP";
+            dataGridViewTextBoxColumn11.HeaderText = "Cнкпр";
+            dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            dataGridViewTextBoxColumn12.DataPropertyName = "R_result_for_PP";
+            dataGridViewTextBoxColumn12.HeaderText = "Rнкпр";
+            dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            dataGridViewTextBoxColumn13.DataPropertyName = "Z_result_for_PP";
+            dataGridViewTextBoxColumn13.HeaderText = "Zнкпр";
+            dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            dataGridViewTextBoxColumn14.DataPropertyName = "Rf_result_for_PP";
+            dataGridViewTextBoxColumn14.HeaderText = "Rfнкпр";
+            dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            dataGridViewTextBoxColumn14.ReadOnly = true;
             // 
             // Form1
             // 
@@ -1107,7 +1108,6 @@
         private DataGridViewTextBoxColumn rresultforGGDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn zresultforGGDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn rfresultforGGDataGridViewTextBoxColumn;
-        private BindingSource kNPRGGCALCRESBindingSource;
         private DataGridViewTextBoxColumn nDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn mPPDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn pPPDataGridViewTextBoxColumn;
@@ -1115,7 +1115,22 @@
         private DataGridViewTextBoxColumn rresultforPPDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn zresultforPPDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn rfresultforPPDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private BindingSource kNPRGGCALCRESBindingSource;
         private BindingSource nKPRLVZHCALCRESBindingSource;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
     }
 }
 

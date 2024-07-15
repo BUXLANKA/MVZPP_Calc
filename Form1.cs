@@ -5,6 +5,7 @@ using MVZPP_Calc.net8.model;
 using MVZPP_Calc.net8.modules;
 using System.Diagnostics;
 using System.Runtime.Versioning;
+using System.IO;
 
 namespace MVZPP_Calc
 {
@@ -17,6 +18,7 @@ namespace MVZPP_Calc
         LocalDBSaveData History = new LocalDBSaveData();
         LocalDBUpdateModule TableUpdater = new LocalDBUpdateModule();
         ForceDataDelete _FDDAgent = new ForceDataDelete();
+        DataBaseDirectoryAllocate dbAllocAgent = new DataBaseDirectoryAllocate();
 
         private AppData? dbContext;
 
@@ -28,39 +30,51 @@ namespace MVZPP_Calc
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            this.dbContext = new AppData();
-            this.dbContext.Database.EnsureCreated();
-            this.dbContext.GG_result.Load();
-            this.dbContext.PP_result.Load();
-            this.dataGridView1.DataSource = dbContext.GG_result.Local.ToBindingList();
-            this.dataGridView2.DataSource = dbContext.PP_result.Local.ToBindingList();
+
+            dbAllocAgent.AllocateDirectoryForAppDbSet();
+
+            try
+            {
+                this.dbContext = new AppData();
+                this.dbContext.Database.EnsureCreated();
+                this.dbContext.GG_result.Load();
+                this.dbContext.PP_result.Load();
+                this.dataGridView1.DataSource = dbContext.GG_result.Local.ToBindingList();
+                this.dataGridView2.DataSource = dbContext.PP_result.Local.ToBindingList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"fatal error == {ex}");
+                Environment.Exit(0);
+                throw;
+            }
         }
         protected override void OnClosed(EventArgs e)
         {
             base.OnClosed(e);
             this.dbContext?.Dispose();
-            this.dbContext=null;
+            this.dbContext = null;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            mGG_Text.Text = "";
-            mLVZH_Text.Text = "";
+            mGG_Text.Clear();
+            mLVZH_Text.Clear();
 
-            pGG_Text.Text = "";
-            pLVZH_Text.Text = "";
+            pGG_Text.Clear();
+            pLVZH_Text.Clear();
 
-            nkprGG_Text.Text = "";
-            nkprLVZH_Text.Text = "";
+            nkprGG_Text.Clear();
+            nkprLVZH_Text.Clear();
 
-            R_result_for_GG.Text = "";
-            Z_result_for_GG.Text = "";
-            Rf_result_for_GG.Text = "";
+            R_result_for_GG.Text = null;
+            Z_result_for_GG.Text = null;
+            Rf_result_for_GG.Text = null;
 
-            R_result_for_LVZH.Text = "";
-            Z_result_for_LVZH.Text = "";
-            Rf_result_for_LVZH.Text = "";
+            R_result_for_LVZH.Text = null;
+            Z_result_for_LVZH.Text = null;
+            Rf_result_for_LVZH.Text = null;
         }
 
         private void CalculateForGG_Click(object sender, EventArgs e)
@@ -152,28 +166,36 @@ namespace MVZPP_Calc
 
         private void ClearAllGGButton_Click(object sender, EventArgs e)
         {
-            mGG_Text.Text = "";
-            pGG_Text.Text = "";
-            nkprGG_Text.Text = "";
-            R_result_for_GG.Text = "";
-            Z_result_for_GG.Text = "";
-            Rf_result_for_GG.Text = "";
+            mGG_Text.Clear();
+            pGG_Text.Clear();
+            nkprGG_Text.Clear();
+            R_result_for_GG.Text = null;
+            Z_result_for_GG.Text = null;
+            Rf_result_for_GG.Text = null;
         }
 
         private void ClearAllLVZHButton_Click(object sender, EventArgs e)
         {
-            mLVZH_Text.Text = "";
-            pLVZH_Text.Text = "";
-            nkprLVZH_Text.Text = "";
-            R_result_for_LVZH.Text = "";
-            Z_result_for_LVZH.Text = "";
+            mLVZH_Text.Clear();
+            pLVZH_Text.Clear();
+            nkprLVZH_Text.Clear();
+            R_result_for_LVZH.Text = null;
+            Z_result_for_LVZH.Text = null;
+            Rf_result_for_LVZH.Text = null;
         }
 
         private void ClearOnlyVariableForGGButton_Click(object sender, EventArgs e)
         {
-            mGG_Text.Text = "";
-            pGG_Text.Text = "";
-            nkprGG_Text.Text = "";
+            mGG_Text.Clear();
+            pGG_Text.Clear();
+            nkprGG_Text.Clear();
+        }
+
+        private void ClearOnlyVariableForLVZHButton_Click(object sender, EventArgs e)
+        {
+            mLVZH_Text.Clear();
+            pLVZH_Text.Clear();
+            nkprLVZH_Text.Clear();
         }
     }
 }
