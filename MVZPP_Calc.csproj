@@ -62,7 +62,9 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -90,6 +92,11 @@
     <Compile Include="modules\CloseWindowDisclaimer.cs" />
     <Compile Include="modules\GetTime.cs" />
     <Compile Include="modules\LocalDBSaveData.cs" />
+    <Compile Include="mvzppDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mvzppDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -114,6 +121,17 @@
     </None>
     <None Include="History_1eR1DataSet.xss">
       <DependentUpon>History_1eR1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mvzppDataSet.xsc">
+      <DependentUpon>mvzppDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mvzppDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mvzppDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mvzppDataSet.xss">
+      <DependentUpon>mvzppDataSet.xsd</DependentUpon>
     </None>
     <None Include="MVZPP_Calc_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
@@ -140,12 +158,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="databases\History_1eR1.mdf" />
-    <Content Include="databases\History_1eR1_log.ldf">
-      <DependentUpon>History_1eR1.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

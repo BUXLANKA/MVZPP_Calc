@@ -28,8 +28,12 @@ namespace MVZPP_Calc
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.history_1eR1DataSet.KNPR_LVZH_CALC_RES);
-            this.kNPR_GG_CALC_RESTableAdapter.Fill(this.history_1eR1DataSet.KNPR_GG_CALC_RES);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mvzppDataSet.KNPR_LVZH_CALC_RES". При необходимости она может быть перемещена или удалена.
+            this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_LVZH_CALC_RES);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mvzppDataSet.KNPR_GG_CALC_RES". При необходимости она может быть перемещена или удалена.
+            this.kNPR_GG_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_GG_CALC_RES);
+
+
 
             mGG_Text.Text = "";
             mLVZH_Text.Text = "";
@@ -66,13 +70,16 @@ namespace MVZPP_Calc
                 Rf_result_for_GG.Text = Convert.ToString(Math.Round(calculator.CalculateRfGG(), 6));
 
                 History.SaveDataGG(calculator.mGG, calculator.pGG, calculator.nkprGG, calculator.CalculateRadiusGG(), calculator.CalculateZGG(), calculator.CalculateRfGG());
+
+                this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_LVZH_CALC_RES);
+                this.kNPR_GG_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_GG_CALC_RES);
             }
         }
 
         private void ReloadTables_Click(object sender, EventArgs e)
         {
-            this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.history_1eR1DataSet.KNPR_LVZH_CALC_RES);
-            this.kNPR_GG_CALC_RESTableAdapter.Fill(this.history_1eR1DataSet.KNPR_GG_CALC_RES);
+            this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_LVZH_CALC_RES);
+            this.kNPR_GG_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_GG_CALC_RES);
         }
 
         private void CalculateForLVZH_Click(object sender, EventArgs e)
@@ -92,6 +99,10 @@ namespace MVZPP_Calc
                 Rf_result_for_LVZH.Text = Convert.ToString(Math.Round(calculator.CalculateRfLVZH(), 6));
 
                 History.SaveDataLVZH(calculator.mLVZH, calculator.pLVZH, calculator.nkprLVZH, calculator.CalculateRadiusLVZH(), calculator.CalculateZLVZH(), calculator.CalculateRfLVZH());
+
+
+                this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_LVZH_CALC_RES);
+                this.kNPR_GG_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_GG_CALC_RES);
             }
         }
 
