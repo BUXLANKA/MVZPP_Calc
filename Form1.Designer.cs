@@ -87,7 +87,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.ReloadTables = new System.Windows.Forms.Button();
+            //this.ReloadTables = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -735,7 +735,7 @@
             // tabPage3
             // 
             this.tabPage3.AutoScroll = true;
-            this.tabPage3.Controls.Add(this.ReloadTables);
+            //this.tabPage3.Controls.Add(this.ReloadTables);
             this.tabPage3.Controls.Add(this.label27);
             this.tabPage3.Controls.Add(this.tabControl2);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -748,13 +748,13 @@
             // 
             // ReloadTables
             // 
-            this.ReloadTables.Location = new System.Drawing.Point(644, 26);
-            this.ReloadTables.Name = "ReloadTables";
-            this.ReloadTables.Size = new System.Drawing.Size(138, 23);
-            this.ReloadTables.TabIndex = 15;
-            this.ReloadTables.Text = "Обновить таблицы";
-            this.ReloadTables.UseVisualStyleBackColor = true;
-            this.ReloadTables.Click += new System.EventHandler(this.ReloadTables_Click);
+            //this.ReloadTables.Location = new System.Drawing.Point(644, 26);
+            //this.ReloadTables.Name = "ReloadTables";
+            //this.ReloadTables.Size = new System.Drawing.Size(138, 23);
+            //this.ReloadTables.TabIndex = 15;
+            //this.ReloadTables.Text = "Обновить таблицы";
+            //this.ReloadTables.UseVisualStyleBackColor = true;
+            //this.ReloadTables.Click += new System.EventHandler(this.ReloadTables_Click);
             // 
             // label27
             // 
@@ -1037,29 +1037,29 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.Button ReloadTables;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        //private System.Windows.Forms.Button ReloadTables;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;

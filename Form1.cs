@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using MVZPP_Calc.modules;
-using System.IO;
-using System.Drawing.Design;
+﻿using MVZPP_Calc.modules;
+using System;
 using System.Diagnostics;
+using System.IO;
+using System.Windows.Forms;
 
 namespace MVZPP_Calc
 {
     public partial class Form1 : Form
     {
-        
+
         CloseWindowDisclaimer CloseWindow = new CloseWindowDisclaimer();
         GetTime DateTime = new GetTime();
         CalcModule calculator = new CalcModule();
@@ -55,7 +47,7 @@ namespace MVZPP_Calc
 
         private void CalculateForGG_Click(object sender, EventArgs e)
         {
-            if (mGG_Text.Text == "" || pGG_Text.Text == "" || nkprGG_Text.Text == "") 
+            if (mGG_Text.Text == "" || pGG_Text.Text == "" || nkprGG_Text.Text == "")
             {
                 MessageBox.Show("Не все поля заполнены!");
             }
@@ -84,7 +76,7 @@ namespace MVZPP_Calc
 
         private void CalculateForLVZH_Click(object sender, EventArgs e)
         {
-            if(mLVZH_Text.Text == "" || pLVZH_Text.Text == "" || nkprLVZH_Text.Text == "")
+            if (mLVZH_Text.Text == "" || pLVZH_Text.Text == "" || nkprLVZH_Text.Text == "")
             {
                 MessageBox.Show("Не все поля заполнены!");
             }

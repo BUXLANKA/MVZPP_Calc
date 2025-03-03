@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MVZPP_Calc.modules
 {
@@ -21,7 +16,7 @@ namespace MVZPP_Calc.modules
         // FOR GG
         public double CalculateRadiusGG()
         {
-            return 7.8 * Math.Pow((mGG / (pGG*nkprGG)), 0.33);
+            return 7.8 * Math.Pow((mGG / (pGG * nkprGG)), 0.33);
         }
         public double CalculateZGG()
         {
