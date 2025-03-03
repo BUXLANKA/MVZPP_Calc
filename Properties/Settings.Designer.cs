@@ -99,5 +99,16 @@ namespace MVZPP_Calc.Properties {
                 return ((string)(this["mvzppConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.108,1433;Initial Catalog=mvzpp;Persist Security Info=True;U" +
+            "ser ID=sa;Password=123;TrustServerCertificate=True")]
+        public string mvzppConnectionString1 {
+            get {
+                return ((string)(this["mvzppConnectionString1"]));
+            }
+        }
     }
 }

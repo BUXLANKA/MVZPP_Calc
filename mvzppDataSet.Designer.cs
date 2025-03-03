@@ -1443,7 +1443,7 @@ SELECT N, mGG, pGG, CnkprGG, R_result_for_GG, Z_result_for_GG, Rf_result_for_GG 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MVZPP_Calc.Properties.Settings.Default.mvzppConnectionString;
+            this._connection.ConnectionString = global::MVZPP_Calc.Properties.Settings.Default.mvzppConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1785,7 +1785,7 @@ SELECT N, mPP, pPP, CnkprPP, R_result_for_PP, Z_result_for_PP, Rf_result_for_PP 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MVZPP_Calc.Properties.Settings.Default.mvzppConnectionString;
+            this._connection.ConnectionString = global::MVZPP_Calc.Properties.Settings.Default.mvzppConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

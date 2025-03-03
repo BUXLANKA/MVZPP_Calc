@@ -6,7 +6,7 @@ namespace MVZPP_Calc.modules
 {
     internal class LocalDBSaveData
     {
-        string connectionString = @"Data Source=192.168.0.108,1433;Initial Catalog=mvzpp;Integrated Security=True;TrustServerCertificate=True";
+        string connectionString = @"Data Source=192.168.0.108,1433;Initial Catalog=mvzpp;User Id=sa; Password=123;";
 
         public void SaveDataGG(double mGG, double pGG, double CnkprGG, double R_result_for_GG, double Z_result_for_GG, double Rf_result_for_GG)
         {

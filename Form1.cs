@@ -20,10 +20,13 @@ namespace MVZPP_Calc
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "mvzppDataSet.KNPR_LVZH_CALC_RES". При необходимости она может быть перемещена или удалена.
-            this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_LVZH_CALC_RES);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "mvzppDataSet.KNPR_GG_CALC_RES". При необходимости она может быть перемещена или удалена.
             this.kNPR_GG_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_GG_CALC_RES);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mvzppDataSet.KNPR_LVZH_CALC_RES". При необходимости она может быть перемещена или удалена.
+            this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_LVZH_CALC_RES);
+
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mvzppDataSet.KNPR_LVZH_CALC_RES". При необходимости она может быть перемещена или удалена.
+            this.kNPR_LVZH_CALC_RESTableAdapter.Fill(this.mvzppDataSet.KNPR_LVZH_CALC_RES);
 
 
 

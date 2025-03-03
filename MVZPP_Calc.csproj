@@ -83,11 +83,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="History_1eR1DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>History_1eR1DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="modules\CalcModule.cs" />
     <Compile Include="modules\CloseWindowDisclaimer.cs" />
     <Compile Include="modules\GetTime.cs" />
@@ -111,17 +106,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="History_1eR1DataSet.xsc">
-      <DependentUpon>History_1eR1DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="History_1eR1DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>History_1eR1DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="History_1eR1DataSet.xss">
-      <DependentUpon>History_1eR1DataSet.xsd</DependentUpon>
-    </None>
     <None Include="mvzppDataSet.xsc">
       <DependentUpon>mvzppDataSet.xsd</DependentUpon>
     </None>
@@ -133,7 +117,6 @@
     <None Include="mvzppDataSet.xss">
       <DependentUpon>mvzppDataSet.xsd</DependentUpon>
     </None>
-    <None Include="MVZPP_Calc_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
