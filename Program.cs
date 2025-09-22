@@ -1,18 +1,16 @@
-﻿using System;
-using System.Windows.Forms;
-
-namespace MVZPP_Calc
+namespace MVZPP_Calc.net8
 {
     internal static class Program
     {
         /// <summary>
-        /// Главная точка входа для приложения.
+        ///  The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
     }

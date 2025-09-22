@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace MVZPP_Calc.modules
+﻿namespace MVZPP_Calc.modules
 {
     internal class GetTime
     {
         public string Get()
         {
-            string date = null;
+            string? date;
 
             int day = DateTime.Now.Day;
             int month = DateTime.Now.Month;

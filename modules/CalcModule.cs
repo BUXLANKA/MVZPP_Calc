@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MVZPP_Calc.modules
+﻿namespace MVZPP_Calc.modules
 {
     internal class CalcModule
     {

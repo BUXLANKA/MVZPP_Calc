@@ -1,9 +1,10 @@
-﻿using System.Windows.Forms;
+﻿using System.Runtime.Versioning;
 
 namespace MVZPP_Calc.modules
 {
     internal class CloseWindowDisclaimer
     {
+        [SupportedOSPlatform("windows")]
         public void ShowDisclaimer(FormClosingEventArgs e)
         {
             // Проверяем, была ли нажата кнопка закрытия окна программы
